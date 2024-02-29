@@ -9,7 +9,7 @@
 
 int playerSwitch = 3; 
 int players = LOW;
-int startButton = 4; //*****************************************************************************
+int startButton = 4; //********************************************************************************************************************
 int row[4] = {21,20,19,18};
 int column[4] = {28,27,26,22};
 Adafruit_8x8matrix matrix = Adafruit_8x8matrix();
@@ -45,10 +45,7 @@ void setup() {
     pinMode(row[i], OUTPUT);
     digitalWriteFast(row[i], HIGH);
   }
-
 }
-
-
 
 void loop() {
   Serial.println("beginning of loop");
@@ -68,10 +65,6 @@ void loop() {
     Serial.print(score);
     gameStart = false;
   }
-
-  
-
-
 
   //checkingValues(); 
 
