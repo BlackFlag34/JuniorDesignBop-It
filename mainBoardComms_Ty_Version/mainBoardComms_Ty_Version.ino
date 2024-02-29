@@ -24,6 +24,7 @@ bool SC1 = false, SC2 = false, SC3 = false, special = false;
 int SCt1, SCt2, SCt3;
 String GAT1, GAT2,  GAT3;
 String myString, garbage;
+int monsterRound;
 
 void setup() {
   lora.begin(115200);
@@ -127,7 +128,8 @@ void sendTransmission(String transmissionType)
   delay(1000);
   digitalWrite(LED6, LOW);
 
-  String info = "B" + "%" + transmissionType + "%" + String(monsterRound) + "%" + GAT1 + "%" + GAT2 + "%" + GAT3;
+  String info;
+  info = info + "B" + "%" + transmissionType + "%" + String(monsterRound) + "%" + GAT1 + "%" + GAT2 + "%" + GAT3;
 
   String mymessage = "AT+SEND=0,"+String(info.length())+","+info+"\r";
 
