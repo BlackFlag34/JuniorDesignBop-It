@@ -181,7 +181,7 @@ uint8_t newRound(){
   firstMove = false;
   startTime = millis();
   Serial.println("round Start");
-  while((millis() - startTime) < 60000){
+  while((millis() - startTime) < 5000){
     checkingValues();
     if(killPlayerDone && movePlayerDone && specialPlayerDone){
       endRound = true;
@@ -198,21 +198,28 @@ uint8_t newRound(){
 void assignRoles(){
   long special = random(0, 2);
   long others = random(0,1);
+  Serial.println(String(special));
   if(special == 2){
     digitalWrite(specialVal0, LOW);
     digitalWrite(specialVal1, HIGH);
+    Serial.println("special 2");
   }else if(special == 1){
     digitalWrite(specialVal0, HIGH);
     digitalWrite(specialVal1, LOW);
+    Serial.println("special 1");
   }else{
     digitalWrite(specialVal0, LOW);
     digitalWrite(specialVal1, LOW);
+    Serial.println("special 0");
   }
-  
+
+  Serial.println(String(others));
   if(others == 1){
     digitalWrite(assignBool, HIGH);
+    Serial.println("assign 1");
   }else{
     digitalWrite(assignBool, LOW);
+    Serial.println("assign 2");
   }
   
   return;
@@ -264,12 +271,12 @@ void readButtonBoard(){
           movedMonsterI = i;
           movedMonsterJ = j;
           lightStates[i][j] = false;
-          matrix.writePixel(j, i, LED_OFF);
+          matrix.drawPixel(j, i, LED_OFF);
         }
         else if((lightStates[i][j] == false) && (firstMove == true) && ((movedMonsterI == i) && (movedMonsterJ == j))){
           movePlayerDone = true;
           lightStates[i][j] = true;
-          matrix.writePixel(j, i, LED_ON);
+          matrix.drawPixel(j, i, LED_ON);
         }
       }
     }

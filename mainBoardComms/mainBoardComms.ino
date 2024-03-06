@@ -28,8 +28,8 @@ int IRinputValue;
 SoftwareSerial lora(3,2);
 
 //Ty's pins
-int specialVal0 = A0;
-int specialVal1 = A1;
+int specialVal0 = A6;
+int specialVal1 = A7;
 int assignBool = A2;
 
 int roundFlag = A3; 
@@ -41,7 +41,7 @@ int specialDone = 4;
 
 
 // indicators: startup, active, special_1, special_2, special_3   ;   startup also indicates sensor reading
-int specialLight_1 = 6, specialLight_2 = A6, specialLight_3 = A7;
+int specialLight_1 = A0, specialLight_2 = A1, specialLight_3 = 6;
 
 // special character information (characterSelect = 1, 2, 3 => Knight, Mage, Archer (iterates per gauntlet))
 int characterSelect_1, characterSelect_2, characterSelect_3;
@@ -100,6 +100,14 @@ void loop()
   special_preformed = false;
   while (digitalRead(readyRound) == LOW){}
   while (attackInformationDefined == false){ setAttacks(); }
+
+    // send round instructions to all gauntlets  ("R" stands for "round" and includes info from list @ end of code)
+  for (int i = 0 ; i < 175 ; i++){  sendTransmission("R");  delay(85);  }   
+
+  digitalWrite(specialLight_1, LOW);
+  digitalWrite(specialLight_2, LOW);
+  digitalWrite(specialLight_3, LOW); 
+
   while (digitalRead(roundFlag) == LOW){}
   while (digitalRead(roundFlag) == HIGH){
     while (attackInformationDefined == true){ playRound();  }
@@ -182,6 +190,11 @@ void playRound()
 }
 
 void setAttacks(){
+
+  digitalWrite(specialLight_1, HIGH);
+  digitalWrite(specialLight_2, HIGH);
+  digitalWrite(specialLight_3, HIGH);
+
   digitalWrite(specialDone, LOW);
   int specialVal;
 
@@ -193,6 +206,9 @@ void setAttacks(){
     specialVal = 2;
   }
 
+  Serial.println(F("Serial Val:"));
+  Serial.println(String(specialVal));
+
   int randomActions;
 
   if(digitalRead(assignBool) == LOW){
@@ -201,6 +217,9 @@ void setAttacks(){
     randomActions  = 1;
   }
 
+  Serial.println(F("Random Actions:"));
+  Serial.println(String(randomActions));  
+
   if (specialVal == 0)
   {
     monsterRound++;
@@ -208,6 +227,7 @@ void setAttacks(){
     if (randomActions == 0){      GAT2 = "K";   GAT3 = "M";}
     else{ GAT2 = "M";   GAT3 = "K";}
     attackInformationDefined = true;
+    digitalWrite(specialLight_1, LOW);
   }
 
   if (specialVal == 1)
@@ -217,6 +237,7 @@ void setAttacks(){
     if (randomActions == 0){      GAT1 = "K";   GAT3 = "M";}
     else{ GAT1 = "M";   GAT3 = "K";}
     attackInformationDefined = true;
+    digitalWrite(specialLight_2, LOW);
   }  
 
   if (specialVal == 2)
@@ -226,6 +247,7 @@ void setAttacks(){
     if (randomActions == 0){      GAT1 = "K";   GAT2 = "M";}
     else{ GAT1 = "M";   GAT2 = "K";}
     attackInformationDefined = true;
+    digitalWrite(specialLight_3, LOW);
   }  
 
   Serial.println(F("Round Moves Defined:"));
@@ -239,8 +261,7 @@ void setAttacks(){
   Serial.println(GAT3);
   Serial.println("");
 
-  // send round instructions to all gauntlets  ("R" stands for "round" and includes info from list @ end of code)
-  for (int i = 0 ; i < 155 ; i++){  sendTransmission("R");  delay(85);  }   
+
 }
 
 void displayGameStartup(){
