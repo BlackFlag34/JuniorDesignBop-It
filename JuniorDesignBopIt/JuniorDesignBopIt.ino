@@ -7,50 +7,84 @@
 #define I2C_ADDR1 0x20  //keys1
 #define I2C_ADDR2 0x21  //keys2
 
-int playerSwitch = 3; 
+//int playerSwitch = 3; 
 int players = LOW;
-int startButton = 4; //********************************************************************************************************************
-int row[4] = {21,20,19,18};
-int column[4] = {28,27,26,22};
+int startButton = 7;
+int rowKill[5] = {28,26,21,19,17};
+int rowMove[5] = {27,22,20,18,16};
+int column[5] = {0,1,2,3,6};
+
+int specialVal0 = 13;
+int specialVal1 = 12;
+int assignBool = 11;
+
+int roundFlag = 10; 
+int startGameFlag = 9;
+
+int readyRound = 8;
+
+int specialDone = 14;
+
+
 Adafruit_8x8matrix matrix = Adafruit_8x8matrix();
-// Your register address, which can be found on your IC's datasheet
-//#define DATA_REGISTER_ADDR 0xBB  //general I2C data register, holds the last recieved or the next to send
 
 //declare the start 
 bool gameStart = false;
-uint8_t roundNum;
+long roundNum;
 uint8_t score;
 uint8_t fails;
 bool endGame;
 bool endRound;
-uint8_t killColumn;
-uint8_t killRow;
-bool lightStates[8][8];
-uint8_t emptySpaces;
+
+bool lightStates[5][5];
+long emptySpaces;
 int playerNum;
 int startTime;
 
-bool playerOneDone;
-bool playerTwoDone;
-bool playerThreeDone;
+bool killPlayerDone;
+bool movePlayerDone;
+bool specialPlayerDone;
 
+bool firstMove;
+
+int movedMonsterI;
+int movedMonsterJ;
 
 void setup() {
   Serial.begin(115200); 
   matrix.begin(0x70);
   I2C_8Bit_begin();  //all
-  randomSeed(analogRead(A0));
-  for(int i = 0; i < 4; i++){
+  for(int i = 0; i < 5; i++){
     pinMode(column[i], INPUT_PULLUP);
-    pinMode(row[i], OUTPUT);
-    digitalWriteFast(row[i], HIGH);
+    pinMode(rowKill[i], OUTPUT);
+    digitalWriteFast(rowKill[i], HIGH);
+    pinMode(rowMove[i], OUTPUT);
+    digitalWriteFast(rowMove[i], HIGH);
   }
+  pinMode(specialVal0, OUTPUT);
+  pinMode(specialVal1, OUTPUT);
+  pinMode(assignBool, OUTPUT);
+  pinMode(roundFlag, OUTPUT);
+  pinMode(startGameFlag, INPUT);
+  pinMode(readyRound, OUTPUT);
+  pinMode(specialDone, INPUT);
+
+  digitalWrite(specialVal0, LOW);
+  digitalWrite(specialVal1, LOW);
+  digitalWrite(assignBool, LOW);
+  digitalWrite(roundFlag, LOW);
+  digitalWrite(readyRound, LOW);
+
+  killPlayerDone = false;
+  movePlayerDone = false;
+  specialPlayerDone = false;
+  
 }
 
 void loop() {
-  Serial.println("beginning of loop");
+  randomSeed(millis());
   if(!gameStart){
-    while(digitalRead(startButton) == LOW){}
+    while(digitalRead(startGameFlag) == LOW){}
     gameInitialize();
   }
   while(!endGame && (score < 99)){
@@ -61,32 +95,21 @@ void loop() {
     fails += failure;
     if(fails >= 2){
       endGame = true;
+      Serial.println("Score is " + String(score));
+      gameStart = false;
     }
-    Serial.print(score);
-    gameStart = false;
   }
-
-  //checkingValues(); 
-
-  Serial.println("end of loop");
-  delay(2000);
 }
 
 void gameInitialize(){
-  players = digitalRead(playerSwitch);
-  if(players == LOW) {
-    playerNum = 2;
-  }else{ 
-    playerNum = 3;
-  }
+
   roundNum = 0;
   score = 0;
   fails = 0;
   endGame = false;
   endRound = true;
-  emptySpaces = 64;
+  emptySpaces = 25;
 
-  Serial.println("initalized");
   gameStart = true;
 }
 
@@ -94,117 +117,161 @@ void gameInitialize(){
 
 //function to read from the button board durring a round and update the lights
 void checkingValues(){
-  uint8_t registerData1 = I2C_8Bit_readFromModule(I2C_ADDR1);//RR
-  uint8_t registerData2 = I2C_8Bit_readFromModule(I2C_ADDR2);//RR
-  Serial.print("Register data 1: ");//RR
-  Serial.println(registerData1);//RR
-
-  killColumn = registerData1;
-  killRow = registerData2;
-
   readButtonBoard();
-  for(int i = 0; i < 8; i++){
-    for(int j = 0; j < 8; j++){
-    if((killRow & (0x01 << i)) && (killColumn & (0x01 << j))){ 
-      if(lightStates[i][j] == true){
-        lightStates[i][j] = false;
-        emptySpaces++;
-        score++;
-      }
-    }
-    matrix.drawPixel(i, j, (lightStates[i][j] ? LED_ON : LED_OFF) );
-    }
-  }
   matrix.writeDisplay();
+  if(digitalRead(specialDone) == HIGH){
+    specialPlayerDone = true;
+  }
 }
 
 
 //function to add monsters at the beginning of rounds
 bool addMonsters(){
   if(emptySpaces == 0){return false;}
+  randomSeed(millis());
   //add monsters
-  uint8_t monsterNumber = random(roundNum / 2, 10);
-  if(monsterNumber > emptySpaces){return false;}
+  long monsterNumber = random(roundNum, 10);
+  Serial.println("random number of monsters = " + String(monsterNumber));
   for(int k = 0; k < monsterNumber; k++){
-    if(!placeMonster())
+    if(!placeMonster()){
       Serial.println("error, monster cannot be placed");
+      return false;
+      }
     }
   return true;
 }
 
 //function to place a single monster
 bool placeMonster(){
-  uint8_t spaceToPlace = random(1, emptySpaces);
+  if(emptySpaces == 0){return false;}
+  long spaceToPlace = random(1, emptySpaces);
   int x = 0;
-    for(int i = 0; i < 8; i++){
-      for(int j = 0; j < 8; j++){
+    for(int i = 0; i < 5; i++){
+      for(int j = 0; j < 5; j++){
         if(lightStates[i][j] == false){
           x++;
           if(x == spaceToPlace){
             lightStates[i][j] = true;
+            matrix.drawPixel(j, i, LED_ON);
+            matrix.writeDisplay();
             emptySpaces--;
             return true;
           }
         }
       }
     }
+    Serial.println("error, no place to place");
   return false;
 }
 
 uint8_t newRound(){
+  roundNum++;
   Serial.println("new round");
   endRound = false;
-  startTime = millis();
   if(!addMonsters()){endGame = true; return 2;}
   assignRoles();
+  digitalWrite(readyRound, HIGH);
   while(digitalRead(startButton) == HIGH){}
   while(digitalRead(startButton) == LOW){}
+  digitalWrite(readyRound, LOW);
+  digitalWrite(roundFlag, HIGH);
+  killPlayerDone = false;
+  movePlayerDone = false;
+  specialPlayerDone = false;
+  firstMove = false;
+  startTime = millis();
   Serial.println("round Start");
-  while((millis() - startTime) < 10000){
-    //will check if done********************************************************
-    readButtonBoard();
+  while((millis() - startTime) < 60000){
+    checkingValues();
+    if(killPlayerDone && movePlayerDone && specialPlayerDone){
+      endRound = true;
+      return 0;
+    }
   }
   Serial.println("round over"); 
-
-  if(playersFailed() < 2){endRound = true; return 1;}
-  else{endRound = true; return 2;}
+  digitalWrite(readyRound, LOW);
+  
+ endRound = true; 
+ return playersFailed();
 }
 
 void assignRoles(){
+  long special = random(0, 2);
+  long others = random(0,1);
+  if(special == 2){
+    digitalWrite(specialVal0, LOW);
+    digitalWrite(specialVal1, HIGH);
+  }else if(special == 1){
+    digitalWrite(specialVal0, HIGH);
+    digitalWrite(specialVal1, LOW);
+  }else{
+    digitalWrite(specialVal0, LOW);
+    digitalWrite(specialVal1, LOW);
+  }
+  
+  if(others == 1){
+    digitalWrite(assignBool, HIGH);
+  }else{
+    digitalWrite(assignBool, LOW);
+  }
+  
   return;
 }
 
 int playersFailed(){
-  return 0;
-}
-
-bool playersDone(){
-  if(playerNum == 2){
-    return true;
+  int fails = 0;
+  if(!killPlayerDone){fails++;}
+  if(!movePlayerDone){
+    fails++;
+    if(firstMove){
+      lightStates[movedMonsterI][movedMonsterJ] = true;
+      matrix.writePixel(movedMonsterJ, movedMonsterI, LED_ON);
+    }
   }
-  return true;
+  if(!specialPlayerDone){fails++;}
+  return fails;
 }
-
-
 
 void readButtonBoard(){
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 5; i++) {
     // Activate current row
-    digitalWrite(row[i], LOW); // Set current row LOW to activate
-
-    for (int j = 0; j < 4; j++) {
+    digitalWrite(rowKill[i], LOW); // Set current row LOW to activate
+    for (int j = 0; j < 5; j++) {
       // Read the state of the current column
       if (digitalRead(column[j]) == LOW) { // If the column reads LOW, a button is pressed
-        Serial.print("Key Pressed at Row: ");
-        Serial.print(i);
-        Serial.print(", Column: ");
-        Serial.println(j);
         // Add a small delay to debounce
         delay(50);
+        if(lightStates[i][j] == true){
+          lightStates[i][j] = false;
+          matrix.drawPixel(j, i, LED_OFF);
+          emptySpaces++;
+          score++;
+          killPlayerDone = true;
+        }
       }
     }
 
     // Deactivate current row before moving to the next
-    digitalWrite(row[i], HIGH);
+    digitalWrite(rowKill[i], HIGH);
+  }
+  for(int i = 0; i < 5; i++){
+    digitalWrite(rowMove[i], LOW);
+    for(int j = 0; j < 5; j++) {
+      if(digitalRead(column[j]) == LOW) {
+        delay(50);
+        if((lightStates[i][j] == true) && (firstMove == false)){
+          firstMove = true;
+          movedMonsterI = i;
+          movedMonsterJ = j;
+          lightStates[i][j] = false;
+          matrix.writePixel(j, i, LED_OFF);
+        }
+        else if((lightStates[i][j] == false) && (firstMove == true) && ((movedMonsterI == i) && (movedMonsterJ == j))){
+          movePlayerDone = true;
+          lightStates[i][j] = true;
+          matrix.writePixel(j, i, LED_ON);
+        }
+      }
+    }
   }
 }

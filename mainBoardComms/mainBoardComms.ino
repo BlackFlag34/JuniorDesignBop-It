@@ -1,203 +1,137 @@
-// central game board
-
-// #include <SPI.h>                                         // include libraries
-// #include <LoRa.h>
+// Comms: Central Game Board
+#include <SPI.h>
 #include <Adafruit_GFX.h>
+#include <Adafruit_GC9A01A.h>
 #include <Adafruit_SSD1306.h>
 #include <SoftwareSerial.h>
 #include <IRremote.h>
 
-#define OLED_MOSI  11         //D1                      // set up OLED screen
-#define OLED_CLK   12         //D0
-#define OLED_DC    9
-#define OLED_CS    8
-#define OLED_RESET 10
-Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
+// #define OLED_MOSI  11         //D1                      // set up OLED screen
+// #define OLED_CLK   12         //D0
+// #define OLED_DC    9
+// #define OLED_CS    8
+// #define OLED_RESET 10
+// Adafruit_SSD1306 display(OLED_MOSI, OLED_CLK, OLED_DC, OLED_RESET, OLED_CS);
 
-// #define DECODE_NEC                                     // setup IR     /    Includes Apple and Onkyo
-#define PIN_RECV 4
+// TFT Display Definitions
+#define screenPin_DC 9                                            
+#define screenPin_CS 10
+#define screenPin_BL 12
+#define screenPin_RST 8
+Adafruit_GC9A01A tft(screenPin_CS, screenPin_DC, screenPin_RST);
 
-SoftwareSerial lora(3,2);                              // define LoRa module as SoftwareSerial for communication
+// IR communication setup and variables (see list @ end of code for information about input IR codes)
+#define IRpin 5
+int IRinputValue;
 
-int specialLight = A0;
-int LED1 = A5;
-int LED2 = A4;
-int LED3 = A3;
-int LED4 = A2;
-int LED5 = A1;
-int LED6 = 5;
-int LED7 = 6;
-int LED8 = 7;
+// LoRa as SoftwareSerial
+SoftwareSerial lora(3,2);
 
-int value;
+//Ty's pins
+int specialVal0 = A0;
+int specialVal1 = A1;
+int assignBool = A2;
 
-// char data;                                             // potentiometer data
+int roundFlag = A3; 
+int startGameFlag = 7;
 
+int readyRound = A5;
+
+int specialDone = 4;
+
+
+// indicators: startup, active, special_1, special_2, special_3   ;   startup also indicates sensor reading
+int specialLight_1 = 6, specialLight_2 = A6, specialLight_3 = A7;
+
+// special character information (characterSelect = 1, 2, 3 => Knight, Mage, Archer (iterates per gauntlet))
+int characterSelect_1, characterSelect_2, characterSelect_3;
+
+// gauntlet attack information (attackType = 1, 2, 3 => Kill Monster, Move Monster, Special Attack)
+// int attackType_1, attackType_2, attackType_3;
+// actually, it will throw things off if I do this now so GAT => gauntlet attack transmission information (iterates per gauntlet)
+String GAT1, GAT2,  GAT3;
+
+// truth for holds
+bool specialSelect_1 = false, specialSelect_2 = false, specialSelect_3 = false, specialAttackPerformed = false, attackInformationDefined = false;
+
+// round identifier
 double monsterRound = 0;
 
-// unsigned long startMillis;                             // setup timer
-// // unsigned long currentMillis;
-// const unsigned long period = 50;
 
-int info_length; 
-int confirm1 = 0;
 
-bool SC1 = false;                                     // ensure special character selection has occured for all gauntlets ; SC for special character
-bool SC2 = false;
-bool SC3 = false;
-
-bool special = false;
-
-int SCt1;                                          // define special character types for all three gauntlets
-int SCt2;
-int SCt3;
-
-String GAT1;                                          // define gauntlet actions
-String GAT2;
-String GAT3;
-
-String myString;                                      // create strings for received communications
-String garbage;
- 
 void setup() {
-  Serial.begin(115200);                               // begin serial, LoRa, IR, and OLED
+  
+  pinMode(specialVal0, INPUT);
+  pinMode(specialVal1, INPUT);
+  pinMode(assignBool, INPUT);
+  pinMode(startGameFlag, OUTPUT);
+  pinMode(readyRound, INPUT);
+  pinMode(specialDone, OUTPUT);
+
+  digitalWrite(specialDone, LOW);
+  digitalWrite(startGameFlag, LOW);
+  
+  Serial.begin(115200);
   lora.begin(115200);
-  display.begin(SSD1306_SWITCHCAPVCC);
+  IrReceiver.begin(IRpin, DISABLE_LED_FEEDBACK);
+  tft.begin();
+  pinMode(screenPin_BL, OUTPUT);  digitalWrite(screenPin_BL, HIGH);   // screen backlight on
 
-  pinMode(3, INPUT);
-  pinMode(2, OUTPUT);
-  pinMode(specialLight, OUTPUT);
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
-  pinMode(LED4, OUTPUT);
-  pinMode(LED5, OUTPUT);
-  pinMode(LED6, OUTPUT);
-  pinMode(LED7, OUTPUT);
-  pinMode(LED8, OUTPUT);
-  digitalWrite(specialLight, LOW); 
-  digitalWrite(LED1, HIGH);
-  digitalWrite(LED2, LOW);
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, LOW);
+  randomSeed(35);
 
-  display.display();                                        // starting screen
-  display.clearDisplay();
-  display.setTextColor(WHITE);
-  display.setTextSize(1);
-  display.setCursor(0,0);
-  display.print(F("welcome to"));
-  display.setTextSize(2);
-  display.setCursor(0,10);
-  display.print(F("SKRIMSLI"));
-  display.setTextSize(1);
-  display.setCursor(0,25);
-  display.print(F("choose your character type"));
-  display.display();  
+  pinMode(3, INPUT);    pinMode(2, OUTPUT);  // LoRa pin definitions
 
-  IrReceiver.begin(PIN_RECV, DISABLE_LED_FEEDBACK);
 
-  // startMillis = millis();                             // start timer for communication
+  displayGameStartup();
 
-  while((SC1==false)||(SC2==false)||(SC3==false))     // all characters must have a designated type to continue past this point in the code
-  {
-    getCharacterTypes();
-  }  
+  while((specialSelect_1==false)||(specialSelect_2==false)||(specialSelect_3==false)){  getCharacterTypes(); }  
+  IRinputValue = 50;
+  digitalWrite(startGameFlag, HIGH);
 
-  value = 50;
+  for (int i=0 ; i<125 ; i++){  sendTransmission("CC");   delay(85);  }     // send character selection confirm to all gauntlets   
 
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW); 
-  digitalWrite(LED8, LOW); 
-  delay(500);
-  digitalWrite(LED1, LOW);
-  digitalWrite(LED6, HIGH);
-  delay(1000);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, HIGH);
-  delay(1000);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, HIGH);
-  delay(1000);
-  digitalWrite(LED8, LOW);
-  digitalWrite(LED2, HIGH);
-
-  sendTransmission(F("CC"));
+  displayGameBegin();
 }
+
+bool special_preformed = false;
 
 void loop() 
 {
-  // determine move type
-  if (monsterRound <= 99)
-  {
-    playRound();
+  special_preformed = false;
+  while (digitalRead(readyRound) == LOW){}
+  while (attackInformationDefined == false){ setAttacks(); }
+  while (digitalRead(roundFlag) == LOW){}
+  while (digitalRead(roundFlag) == HIGH){
+    while (attackInformationDefined == true){ playRound();  }
   }
 }
 
 void getCharacterTypes()
 {
+  Serial.println(F("Receiving IR..."));
   receiveIR();
-  if (value == 27)
-  {
-    SCt1 = 0;
-    SC1 = true;
-  }
-  if (value == 1)
-  {
-    SCt1 = 1;
-    SC1 = true;
-  }
-  if (value == 2)
-  {
-    SCt1 = 2;
-    SC1 = true;
-  }
-  if (value == 9)
-  {
-    SCt2 = 0;
-    SC2 = true;
-  }
-  if (value == 10)
-  {
-    SCt2 = 1;
-    SC2 = true;
-  }
-  if (value == 11)
-  {
-    SCt2 = 2;
-    SC2 = true;
-  }
-  if (value == 18)
-  {
-    SCt3 = 0;
-    SC3 = true;
-  }
-  if (value == 19)
-  {
-    SCt3 = 1;
-    SC3 = true;
-  }
-  if (value == 20)
-  {
-    SCt3 = 2;
-    SC3 = true;
-  }
-  if (SC1 == true)
-  {
-    digitalWrite(LED6, HIGH);
-  }
-  if (SC2 == true)
-  {
-    digitalWrite(LED7, HIGH);
-  }
-  if (SC3 == true)
-  {
-    digitalWrite(LED8, HIGH);
-  }
+  Serial.println(F("IR Received:"));
+  Serial.println(IRinputValue);
+  if (IRinputValue == 27){characterSelect_1 = 0; specialSelect_1 = true;}
+  if (IRinputValue == 1){characterSelect_1 = 1; specialSelect_1 = true;}
+  if (IRinputValue == 2){characterSelect_1 = 2; specialSelect_1 = true;}
+
+  if (IRinputValue == 9){characterSelect_2 = 0; specialSelect_2 = true;}
+  if (IRinputValue == 10){characterSelect_2 = 1; specialSelect_2 = true;}
+  if (IRinputValue == 11){characterSelect_2 = 2; specialSelect_2 = true;}
+
+  if (IRinputValue == 18){characterSelect_3 = 0; specialSelect_3 = true;}
+  if (IRinputValue == 19){characterSelect_3 = 1; specialSelect_3 = true;}
+  if (IRinputValue == 20){characterSelect_3 = 2; specialSelect_3 = true;}
+
+  if (specialSelect_1 == true){digitalWrite(specialLight_1, HIGH);}
+  if (specialSelect_2 == true){digitalWrite(specialLight_2, HIGH);}
+  if (specialSelect_3 == true){digitalWrite(specialLight_3, HIGH);}
+
+  if ((specialLight_1 == HIGH)&&(specialLight_2 == HIGH)&&(specialLight_1)){
+    digitalWrite(specialLight_1, LOW);
+    digitalWrite(specialLight_2, LOW);
+    digitalWrite(specialLight_3, LOW);}
 }
 
 void receiveIR()
@@ -205,188 +139,152 @@ void receiveIR()
   if (IrReceiver.decode()) 
   {
     IrReceiver.resume();
-    value = IrReceiver.decodedIRData.command;
-    display.clearDisplay();
-    display.setTextSize(1);                             // display is just for prototyping ; main board won't have a display
-    display.setCursor(0,0);
-    display.print(F("received value: "));
-    display.setCursor(0, 10);
-    display.print(value);
-    display.setCursor(0, 20);
-    display.print("successfully parsed");
-    display.display();
-    display.clearDisplay();       
-    IrReceiver.resume();                                // Important, enables to receive the next IR signal
+    IRinputValue = IrReceiver.decodedIRData.command;   
+    IrReceiver.resume();
   } 
 }
 
 void sendTransmission(String transmissionType)
-{ 
-  displayInfo(F("Sending... "),"");
-  digitalWrite(LED6, HIGH);
-  delay(1000);
-  digitalWrite(LED6, LOW);
-
+{
   String info;
-  // info.reserve(64);
-  // info += "B%";
-  // info += transmissionType;
-  // info += "%";
-  // info += String(monsterRound);
-  // info += "%";
-  // info += GAT1;
-  // info += "%";
-  // info += GAT2;
-  // info += "%";
-  // info += GAT3;
+  info = info + ",B" + "%" + transmissionType + "%" + String(monsterRound) + "%" + GAT1 + "%" + GAT2 + "%" + GAT3;
+  String info_length = String(info.length());
+  lora.println("AT+SEND=0,"+info_length+info+"\r");
 
-  info = info + "B" + "%" + transmissionType + "%" + String(monsterRound) + "%" + GAT1 + "%" + GAT2 + "%" + GAT3;
-  info_length = info.length();
-
-  String mymessage;
-  // mymessage.reserve(32);
-  // mymessage += "AT+SEND=0,";
-  // mymessage += String(info_length);
-  // mymessage += ",";
-  // mymessage += info;
-  // mymessage += "\r";
-
-  mymessage = mymessage+"AT+SEND=0,"+String(info_length)+","+info+"\r";
-
-  displayInfo(F("MSG: "), mymessage);
-  delay(1000);
-  digitalWrite(LED7, HIGH);
-  delay(1000);
-  digitalWrite(LED7, LOW);
-  for (int i = 0 ; i <= 1000 ; i++)
-  {
-    lora.println(mymessage);
-    delay(10);
-    digitalWrite(LED8, HIGH);
-    delay(50);
-    digitalWrite(LED8, LOW);      
-  }
-  info = "";
+  Serial.println(F("LoRa transmission sent:"));
+  Serial.println("AT+SEND=0,"+info_length+info+"\r");
+  Serial.println("");
 }
 
 void playRound()
 {
-  monsterRound++;
-  long special = random(3);
-  if (special == 0)
+  // // send round instructions to all gauntlets  ("R" stands for "round" and includes info from list @ end of code)
+  // for (int i = 0 ; i < 155 ; i++){  sendTransmission("R");  delay(85);  }                         
+  
+  IRinputValue = 50;
+
+  // SAI == special attack information (using input IR codes from list @ end of code)
+  int SAI = 0;
+  while ((SAI < 3)||(SAI > 27)||(SAI == 18)||(SAI == 19)||(SAI == 20)||(SAI == 9)||(SAI == 10)||(SAI == 11)){ receiveIR();  SAI = IRinputValue; }
+
+  if ((GAT1 == "S") && ((characterSelect_1 == 0 && SAI == 3)  || (characterSelect_1 == 1 && SAI == 5)  || (characterSelect_1 == 2 && SAI == 7))) 
+    { specialAttackPerformed = true; attackInformationDefined = false; }
+  else if ((GAT2 == "S") && ((characterSelect_2 == 0 && SAI == 12) || (characterSelect_2 == 1 && SAI == 14) || (characterSelect_2 == 2 && SAI == 16)))
+    { specialAttackPerformed = true; attackInformationDefined = false; }
+  else if ((GAT3 == "S") && ((characterSelect_3 == 0 && SAI == 21) || (characterSelect_3 == 1 && SAI == 23) || (characterSelect_3 == 2 && SAI == 25)))
+    { specialAttackPerformed = true; attackInformationDefined = false; }
+  else{ specialAttackPerformed = false; attackInformationDefined = false;}
+
+  if (specialAttackPerformed == true)
   {
-    GAT1 = "S";                                                             // GAT = gauntlet action transmission definitions
-    long randomActions = random(2);
-    if (randomActions == 0)
-    {
-      GAT2 = "K";
-      GAT3 = "M";
-    }
-    else if (randomActions == 1)
-    {
-      GAT2 = "M";
-      GAT3 = "K";
-    }
+    digitalWrite(specialDone, HIGH);
   }
-  else if (special == 1)
-  {
-    GAT2 = "S";
-    long randomActions = random(2);
-    if (randomActions == 0)
-    {
-      GAT1 = "K";
-      GAT3 = "M";
-    }
-    else if (randomActions == 1)
-    {
-      GAT1 = "M";
-      GAT3 = "K";
-    }
-  }
-  else if (special == 2)
-  {
-    GAT3 = "S";
-    long randomActions = random(2);
-    if (randomActions == 0)
-    {
-      GAT1 = "K";
-      GAT2 = "M";
-    }
-    else if (randomActions == 1)
-    {
-      GAT1 = "M";
-      GAT2 = "K";
-    }
-  }
-  sendTransmission("R");                                                  // send round instructions to all gauntlets
-  int SAI = value;                                                        // define special attack information
-  while ((SAI < 0)||(SAI > 26))
-  {
-    receiveIR();
-    SAI = value;
-  }
-  if (GAT1 == "S")
-  {
-    if (SCt1 == 0)
-    {
-      if (SAI == 3){ special = true; }
-    }
-    if (SCt1 == 1)
-    {
-      if (SAI == 5){ special = true; }
-    }    
-    if (SCt1 == 2)
-    {
-      if (SAI == 7){ special = true; }
-    }
-  }
-  if (GAT2 == "S")
-  {
-    if (SCt2 == 0)
-    {
-      if (SAI == 12){ special = true; }
-    }
-    if (SCt2 == 1)
-    {
-      if (SAI == 14){ special = true; }
-    }    
-    if (SCt2 == 2)
-    {
-      if (SAI == 16){ special = true; }
-    }
-  }  
-  if (GAT3 == "S")
-  {
-    if (SCt3 == 0)
-    {
-      if (SAI == 21){ special = true; }
-    }
-    if (SCt3 == 1)
-    {
-      if (SAI == 23){ special = true; }
-    }    
-    if (SCt3 == 2)
-    {
-      if (SAI == 25){ special = true; }
-    }
-  }
-  if (special == true)
-  {
-    digitalWrite(specialLight, HIGH);
-    delay(3000); 
-  }
-  digitalWrite(specialLight, LOW);
-  special = false;
 }
 
-void displayInfo(String identifier, String message){                       // send words to screen for display
-  display.setTextSize(1);
-  display.setCursor(0,0);
-  display.print(identifier);
-  display.setCursor(0, 10);
-  display.print(message);
-  display.display();
-  display.clearDisplay();
+void setAttacks(){
+  digitalWrite(specialDone, LOW);
+  int specialVal;
+
+  if((digitalRead(specialVal0) == LOW) && (digitalRead(specialVal1) == LOW)){
+    specialVal = 0;
+  }else if((digitalRead(specialVal0) == HIGH) && (digitalRead(specialVal1) == LOW)){
+    specialVal = 1;
+  }else{
+    specialVal = 2;
+  }
+
+  int randomActions;
+
+  if(digitalRead(assignBool) == LOW){
+    randomActions = 0;
+  }else{
+    randomActions  = 1;
+  }
+
+  if (specialVal == 0)
+  {
+    monsterRound++;
+    GAT1 = "S";
+    if (randomActions == 0){      GAT2 = "K";   GAT3 = "M";}
+    else{ GAT2 = "M";   GAT3 = "K";}
+    attackInformationDefined = true;
+  }
+
+  if (specialVal == 1)
+  {
+    monsterRound++;
+    GAT2 = "S";
+    if (randomActions == 0){      GAT1 = "K";   GAT3 = "M";}
+    else{ GAT1 = "M";   GAT3 = "K";}
+    attackInformationDefined = true;
+  }  
+
+  if (specialVal == 2)
+  {
+    monsterRound++;
+    GAT3 = "S";
+    if (randomActions == 0){      GAT1 = "K";   GAT2 = "M";}
+    else{ GAT1 = "M";   GAT2 = "K";}
+    attackInformationDefined = true;
+  }  
+
+  Serial.println(F("Round Moves Defined:"));
+  Serial.println(F("Round Number:"));
+  Serial.println(monsterRound);
+  Serial.println("Gauntlet 1 Instructions:");
+  Serial.println(GAT1);
+  Serial.println("Gauntlet 2 Instructions:");
+  Serial.println(GAT2);
+  Serial.println("Gauntlet 3 Instructions:");
+  Serial.println(GAT3);
+  Serial.println("");
+
+  // send round instructions to all gauntlets  ("R" stands for "round" and includes info from list @ end of code)
+  for (int i = 0 ; i < 155 ; i++){  sendTransmission("R");  delay(85);  }   
+}
+
+void displayGameStartup(){
+  tft.setRotation(3);
+  tft.fillScreen(GC9A01A_BLACK);
+  tft.setCursor(70, 30);
+  tft.setTextColor(GC9A01A_WHITE);  tft.setTextSize(2);
+  tft.println(F("Main Board"));
+  tft.setCursor(42, 75);
+  tft.setTextColor(GC9A01A_BLUE); tft.setTextSize(2);
+  tft.println(F("You're Playing"));
+  tft.setCursor(30, 95);
+  tft.setTextColor(GC9A01A_BLUE); tft.setTextSize(4);
+  tft.println(F("SKRIMSLI"));
+  tft.setCursor(53, 145);
+  tft.setTextColor(GC9A01A_WHITE);    tft.setTextSize(2);
+  tft.println(F("Choose Your"));
+  tft.setCursor(35, 165);
+  tft.setTextColor(GC9A01A_WHITE);    tft.setTextSize(2);
+  tft.println(F("Character Type"));
+  tft.println();
+  delay(3000);
+}
+
+void displayGameBegin(){
+  tft.setRotation(3);
+  tft.fillScreen(GC9A01A_BLACK);
+  tft.setCursor(70, 30);
+  tft.setTextColor(GC9A01A_WHITE);  tft.setTextSize(2);
+  tft.println(F("Main Board"));
+  tft.setCursor(42, 75);
+  tft.setTextColor(GC9A01A_BLUE); tft.setTextSize(2);
+  tft.println(F("You're Playing"));
+  tft.setCursor(30, 95);
+  tft.setTextColor(GC9A01A_BLUE); tft.setTextSize(4);
+  tft.println(F("SKRIMSLI"));
+  tft.setCursor(53, 145);
+  tft.setTextColor(GC9A01A_WHITE);    tft.setTextSize(2);
+  tft.println(F("Characters"));
+  tft.setCursor(65, 165);
+  tft.setTextColor(GC9A01A_WHITE);    tft.setTextSize(2);
+  tft.println(F("Chosen!"));
+  tft.println();
+  delay(3000);
 }
 
 
