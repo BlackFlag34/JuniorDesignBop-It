@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=start_button Pin=J_Pico_2-10
+Added Pin To Net: NetName=NetJ_Pico_2_9 Pin=J_Pico_2-9
+Added Pin To Net: NetName=NetJ_Pico_2_9 Pin=R1-2
+Added Pin To Net: NetName=NetJ_Pico_2_9 Pin=Start-3
+Added Net: Name=NetJ_Pico_2_9
