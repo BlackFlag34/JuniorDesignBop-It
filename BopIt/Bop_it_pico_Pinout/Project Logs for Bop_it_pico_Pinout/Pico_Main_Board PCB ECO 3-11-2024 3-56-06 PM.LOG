@@ -1,0 +1,117 @@
+Change Component Footprint: Designator=J_Pico_1 Old Footprint=FP-1985276-MFG New Footprint=FP-1985276-MFG
+Change Component Footprint: Designator=J_Pico_2 Old Footprint=FP-1985276-MFG New Footprint=FP-1985276-MFG
+Change Component Footprint: Designator=J_Pico_3 Old Footprint=FP-1985276-MFG New Footprint=FP-1985276-MFG
+Change Component Footprint: Designator=J_Pico_4 Old Footprint=FP-1985276-MFG New Footprint=FP-1985276-MFG
+Added Pin To Net: NetName=3v3 Pin=J_Pico_2-9
+Added Pin To Net: NetName=3v3 Pin=Pico Board-36
+Added Net: Name=3v3
+Added Pin To Net: NetName=AVREF Pin=J_Pico_2-8
+Added Pin To Net: NetName=AVREF Pin=Pico Board-35
+Added Net: Name=AVREF
+Added Pin To Net: NetName=EN Pin=J_Pico_2-7
+Added Pin To Net: NetName=EN Pin=Pico Board-37
+Added Net: Name=EN
+Added Pin To Net: NetName=flag_1 Pin=J_Pico_3-1
+Added Pin To Net: NetName=flag_1 Pin=Pico Board-11
+Added Net: Name=flag_1
+Added Pin To Net: NetName=flag_2 Pin=J_Pico_3-2
+Added Pin To Net: NetName=flag_2 Pin=Pico Board-12
+Added Net: Name=flag_2
+Added Pin To Net: NetName=flag_3 Pin=J_Pico_3-3
+Added Pin To Net: NetName=flag_3 Pin=Pico Board-14
+Added Net: Name=flag_3
+Added Pin To Net: NetName=flag_4 Pin=J_Pico_3-4
+Added Pin To Net: NetName=flag_4 Pin=Pico Board-15
+Added Net: Name=flag_4
+Added Pin To Net: NetName=flag_5 Pin=J_Pico_3-5
+Added Pin To Net: NetName=flag_5 Pin=Pico Board-16
+Added Net: Name=flag_5
+Added Pin To Net: NetName=flag_6 Pin=J_Pico_3-6
+Added Pin To Net: NetName=flag_6 Pin=Pico Board-17
+Added Net: Name=flag_6
+Added Pin To Net: NetName=flag_7 Pin=J_Pico_3-7
+Added Pin To Net: NetName=flag_7 Pin=Pico Board-19
+Added Net: Name=flag_7
+Added Pin To Net: NetName=flag_8 Pin=J_Pico_3-8
+Added Pin To Net: NetName=flag_8 Pin=Pico Board-20
+Added Net: Name=flag_8
+Added Pin To Net: NetName=key_column_1 Pin=J_Pico_1-1
+Added Pin To Net: NetName=key_column_1 Pin=Pico Board-1
+Added Net: Name=key_column_1
+Added Pin To Net: NetName=key_column_2 Pin=J_Pico_1-2
+Added Pin To Net: NetName=key_column_2 Pin=Pico Board-2
+Added Net: Name=key_column_2
+Added Pin To Net: NetName=key_column_3 Pin=J_Pico_1-3
+Added Pin To Net: NetName=key_column_3 Pin=Pico Board-4
+Added Net: Name=key_column_3
+Added Pin To Net: NetName=key_column_4 Pin=J_Pico_1-4
+Added Pin To Net: NetName=key_column_4 Pin=Pico Board-5
+Added Net: Name=key_column_4
+Added Pin To Net: NetName=key_column_5 Pin=J_Pico_1-5
+Added Pin To Net: NetName=key_column_5 Pin=Pico Board-9
+Added Net: Name=key_column_5
+Added Pin To Net: NetName=kill_row_1 Pin=J_Pico_2-1
+Added Pin To Net: NetName=kill_row_1 Pin=Pico Board-34
+Added Net: Name=kill_row_1
+Added Pin To Net: NetName=kill_row_2 Pin=J_Pico_2-2
+Added Pin To Net: NetName=kill_row_2 Pin=Pico Board-31
+Added Net: Name=kill_row_2
+Added Pin To Net: NetName=kill_row_3 Pin=J_Pico_2-3
+Added Pin To Net: NetName=kill_row_3 Pin=Pico Board-27
+Added Net: Name=kill_row_3
+Added Pin To Net: NetName=kill_row_4 Pin=J_Pico_2-4
+Added Pin To Net: NetName=kill_row_4 Pin=Pico Board-25
+Added Net: Name=kill_row_4
+Added Pin To Net: NetName=kill_row_5 Pin=J_Pico_2-5
+Added Pin To Net: NetName=kill_row_5 Pin=Pico Board-22
+Added Net: Name=kill_row_5
+Added Pin To Net: NetName=move_row_1 Pin=J_Pico_1-6
+Added Pin To Net: NetName=move_row_1 Pin=Pico Board-32
+Added Net: Name=move_row_1
+Added Pin To Net: NetName=move_row_2 Pin=J_Pico_1-7
+Added Pin To Net: NetName=move_row_2 Pin=Pico Board-29
+Added Net: Name=move_row_2
+Added Pin To Net: NetName=move_row_3 Pin=J_Pico_1-8
+Added Pin To Net: NetName=move_row_3 Pin=Pico Board-26
+Added Net: Name=move_row_3
+Added Pin To Net: NetName=move_row_4 Pin=J_Pico_1-9
+Added Pin To Net: NetName=move_row_4 Pin=Pico Board-24
+Added Net: Name=move_row_4
+Added Pin To Net: NetName=move_row_5 Pin=J_Pico_1-10
+Added Pin To Net: NetName=move_row_5 Pin=Pico Board-21
+Added Net: Name=move_row_5
+Added Pin To Net: NetName=restart_button Pin=Pico Board-30
+Added Pin To Net: NetName=restart_button Pin=Restart-1
+Added Pin To Net: NetName=restart_button Pin=Restart-2
+Added Net: Name=restart_button
+Added Pin To Net: NetName=SCL Pin=J_Pico_4-8
+Added Pin To Net: NetName=SCL Pin=Pico Board-7
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=J_Pico_4-7
+Added Pin To Net: NetName=SDA Pin=Pico Board-6
+Added Net: Name=SDA
+Added Pin To Net: NetName=start_button Pin=Pico Board-10
+Added Pin To Net: NetName=start_button Pin=Start-1
+Added Pin To Net: NetName=start_button Pin=Start-2
+Added Net: Name=start_button
+Added Pin To Net: NetName=TP1 Pin=J_Pico_4-1
+Added Pin To Net: NetName=TP1 Pin=Pico Board-TP1
+Added Net: Name=TP1
+Added Pin To Net: NetName=TP2 Pin=J_Pico_4-2
+Added Pin To Net: NetName=TP2 Pin=Pico Board-TP2
+Added Net: Name=TP2
+Added Pin To Net: NetName=TP3 Pin=J_Pico_4-3
+Added Pin To Net: NetName=TP3 Pin=Pico Board-TP3
+Added Net: Name=TP3
+Added Pin To Net: NetName=TP4 Pin=J_Pico_4-4
+Added Pin To Net: NetName=TP4 Pin=Pico Board-TP4
+Added Net: Name=TP4
+Added Pin To Net: NetName=TP5 Pin=J_Pico_4-5
+Added Pin To Net: NetName=TP5 Pin=Pico Board-TP5
+Added Net: Name=TP5
+Added Pin To Net: NetName=TP6 Pin=J_Pico_4-6
+Added Pin To Net: NetName=TP6 Pin=Pico Board-TP6
+Added Net: Name=TP6
+Added Pin To Net: NetName=VSYS Pin=J_Pico_2-6
+Added Pin To Net: NetName=VSYS Pin=Pico Board-39
+Added Net: Name=VSYS

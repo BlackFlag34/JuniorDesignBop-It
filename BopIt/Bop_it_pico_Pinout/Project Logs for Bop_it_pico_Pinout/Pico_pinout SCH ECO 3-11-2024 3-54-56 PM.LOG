@@ -1,0 +1,76 @@
+Remove Pin=J_Pico_1-1 From Net=key_column_1
+Remove Pin=J_Pico_1-2 From Net=key_column_2
+Remove Pin=J_Pico_1-3 From Net=key_column_3
+Remove Pin=J_Pico_1-4 From Net=key_column_4
+Remove Pin=J_Pico_1-5 From Net=key_column_5
+Remove Pin=J_Pico_1-6 From Net=move_row_1
+Remove Pin=J_Pico_1-7 From Net=move_row_2
+Remove Pin=J_Pico_1-8 From Net=move_row_3
+Remove Pin=J_Pico_1-9 From Net=move_row_4
+Remove Pin=J_Pico_1-10 From Net=move_row_5
+Remove Pin=J_Pico_2-1 From Net=kill_row_1
+Remove Pin=J_Pico_2-2 From Net=kill_row_2
+Remove Pin=J_Pico_2-3 From Net=kill_row_3
+Remove Pin=J_Pico_2-4 From Net=kill_row_4
+Remove Pin=J_Pico_2-5 From Net=kill_row_5
+Remove Pin=J_Pico_2-6 From Net=VSYS
+Remove Pin=J_Pico_2-7 From Net=EN
+Remove Pin=J_Pico_2-8 From Net=AVREF
+Remove Pin=J_Pico_2-9 From Net=3v3
+Remove Pin=J_Pico_3-1 From Net=flag_1
+Remove Pin=J_Pico_3-2 From Net=flag_2
+Remove Pin=J_Pico_3-3 From Net=flag_3
+Remove Pin=J_Pico_3-4 From Net=flag_4
+Remove Pin=J_Pico_3-5 From Net=flag_5
+Remove Pin=J_Pico_3-6 From Net=flag_6
+Remove Pin=J_Pico_3-7 From Net=flag_7
+Remove Pin=J_Pico_3-8 From Net=flag_8
+Remove Pin=J_Pico_4-1 From Net=TP1
+Remove Pin=J_Pico_4-2 From Net=TP2
+Remove Pin=J_Pico_4-3 From Net=TP3
+Remove Pin=J_Pico_4-4 From Net=TP4
+Remove Pin=J_Pico_4-5 From Net=TP5
+Remove Pin=J_Pico_4-6 From Net=TP6
+Remove Pin=J_Pico_4-7 From Net=SDA
+Remove Pin=J_Pico_4-8 From Net=SCL
+Remove Pin=Pico Board-1 From Net=key_column_1
+Remove Pin=Pico Board-2 From Net=key_column_2
+Remove Pin=Pico Board-4 From Net=key_column_3
+Remove Pin=Pico Board-5 From Net=key_column_4
+Remove Pin=Pico Board-6 From Net=SDA
+Remove Pin=Pico Board-7 From Net=SCL
+Remove Pin=Pico Board-9 From Net=key_column_5
+Remove Pin=Pico Board-10 From Net=start_button
+Remove Pin=Pico Board-11 From Net=flag_1
+Remove Pin=Pico Board-12 From Net=flag_2
+Remove Pin=Pico Board-14 From Net=flag_3
+Remove Pin=Pico Board-15 From Net=flag_4
+Remove Pin=Pico Board-16 From Net=flag_5
+Remove Pin=Pico Board-17 From Net=flag_6
+Remove Pin=Pico Board-19 From Net=flag_7
+Remove Pin=Pico Board-20 From Net=flag_8
+Remove Pin=Pico Board-21 From Net=move_row_5
+Remove Pin=Pico Board-22 From Net=kill_row_5
+Remove Pin=Pico Board-24 From Net=move_row_4
+Remove Pin=Pico Board-25 From Net=kill_row_4
+Remove Pin=Pico Board-26 From Net=move_row_3
+Remove Pin=Pico Board-27 From Net=kill_row_3
+Remove Pin=Pico Board-29 From Net=move_row_2
+Remove Pin=Pico Board-30 From Net=restart_button
+Remove Pin=Pico Board-31 From Net=kill_row_2
+Remove Pin=Pico Board-32 From Net=move_row_1
+Remove Pin=Pico Board-34 From Net=kill_row_1
+Remove Pin=Pico Board-35 From Net=AVREF
+Remove Pin=Pico Board-36 From Net=3v3
+Remove Pin=Pico Board-37 From Net=EN
+Remove Pin=Pico Board-39 From Net=VSYS
+Remove Pin=Pico Board-TP1 From Net=TP1
+Remove Pin=Pico Board-TP2 From Net=TP2
+Remove Pin=Pico Board-TP3 From Net=TP3
+Remove Pin=Pico Board-TP4 From Net=TP4
+Remove Pin=Pico Board-TP5 From Net=TP5
+Remove Pin=Pico Board-TP6 From Net=TP6
+Remove Pin=Restart-1 From Net=restart_button
+Remove Pin=Restart-2 From Net=restart_button
+Remove Pin=Start-1 From Net=start_button
+Remove Pin=Start-2 From Net=start_button
