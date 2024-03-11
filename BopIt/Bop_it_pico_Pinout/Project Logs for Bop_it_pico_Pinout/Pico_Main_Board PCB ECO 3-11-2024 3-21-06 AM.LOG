@@ -1,0 +1,317 @@
+Removed Pin From Net: NetName=key_column_1 Pin=_pico-1-1
+Removed Pin From Net: NetName=key_column_1 Pin=_pico-1-1
+Removed Pin From Net: NetName=key_column_2 Pin=_pico-1-2
+Removed Pin From Net: NetName=key_column_2 Pin=_pico-1-2
+Removed Pin From Net: NetName=key_column_3 Pin=_pico-1-3
+Removed Pin From Net: NetName=key_column_3 Pin=_pico-1-3
+Removed Pin From Net: NetName=key_column_4 Pin=_pico-1-4
+Removed Pin From Net: NetName=key_column_4 Pin=_pico-1-4
+Removed Pin From Net: NetName=key_column_1 Pin=E1-A1
+Removed Pin From Net: NetName=key_column_1 Pin=E1-A1
+Removed Pin From Net: NetName=key_column_2 Pin=E1-A2
+Removed Pin From Net: NetName=key_column_2 Pin=E1-A2
+Removed Pin From Net: NetName=key_column_3 Pin=E1-A3
+Removed Pin From Net: NetName=key_column_3 Pin=E1-A3
+Removed Pin From Net: NetName=key_column_4 Pin=E1-A4
+Removed Pin From Net: NetName=key_column_4 Pin=E1-A4
+Removed Pin From Net: NetName=key_column_5 Pin=E1-A5
+Removed Pin From Net: NetName=key_column_5 Pin=E1-A5
+Removed Pin From Net: NetName=key_column_1 Pin=E1-A6
+Removed Pin From Net: NetName=key_column_1 Pin=E1-A6
+Removed Pin From Net: NetName=key_column_2 Pin=E1-A7
+Removed Pin From Net: NetName=key_column_2 Pin=E1-A7
+Removed Pin From Net: NetName=key_column_3 Pin=E1-A8
+Removed Pin From Net: NetName=key_column_3 Pin=E1-A8
+Removed Pin From Net: NetName=flag_1 Pin=E2-A1
+Removed Pin From Net: NetName=flag_1 Pin=E2-A1
+Removed Pin From Net: NetName=flag_2 Pin=E2-A2
+Removed Pin From Net: NetName=flag_2 Pin=E2-A2
+Removed Pin From Net: NetName=flag_3 Pin=E2-A3
+Removed Pin From Net: NetName=flag_3 Pin=E2-A3
+Removed Pin From Net: NetName=flag_4 Pin=E2-A4
+Removed Pin From Net: NetName=flag_4 Pin=E2-A4
+Removed Pin From Net: NetName=flag_5 Pin=E2-A5
+Removed Pin From Net: NetName=flag_5 Pin=E2-A5
+Removed Pin From Net: NetName=flag_6 Pin=E2-A6
+Removed Pin From Net: NetName=flag_6 Pin=E2-A6
+Removed Pin From Net: NetName=flag_7 Pin=E2-A7
+Removed Pin From Net: NetName=flag_7 Pin=E2-A7
+Removed Pin From Net: NetName=flag_8 Pin=E2-A8
+Removed Pin From Net: NetName=flag_8 Pin=E2-A8
+Removed Pin From Net: NetName=key_column_1 Pin=J_h-1
+Removed Pin From Net: NetName=key_column_2 Pin=J_h-2
+Removed Pin From Net: NetName=key_column_3 Pin=J_h-3
+Removed Pin From Net: NetName=key_column_4 Pin=J_h-4
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-1
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-1
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-1
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-1
+Removed Pin From Net: NetName=kill_row_5 Pin=J_pico_3-2
+Removed Pin From Net: NetName=kill_row_5 Pin=J_pico_3-2
+Removed Pin From Net: NetName=kill_row_5 Pin=J_pico_3-2
+Removed Pin From Net: NetName=kill_row_5 Pin=J_pico_3-2
+Removed Pin From Net: NetName=move_row_5 Pin=J_pico_3-3
+Removed Pin From Net: NetName=move_row_5 Pin=J_pico_3-3
+Removed Pin From Net: NetName=move_row_5 Pin=J_pico_3-3
+Removed Pin From Net: NetName=move_row_5 Pin=J_pico_3-3
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-4
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-4
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-4
+Removed Pin From Net: NetName=VCC Pin=J_pico_3-4
+Removed Pin From Net: NetName=move_row_1 Pin=J_pico_4-1
+Removed Pin From Net: NetName=move_row_1 Pin=J_pico_4-1
+Removed Pin From Net: NetName=move_row_1 Pin=J_pico_4-1
+Removed Pin From Net: NetName=move_row_1 Pin=J_pico_4-1
+Removed Pin From Net: NetName=move_row_2 Pin=J_pico_4-2
+Removed Pin From Net: NetName=move_row_2 Pin=J_pico_4-2
+Removed Pin From Net: NetName=move_row_2 Pin=J_pico_4-2
+Removed Pin From Net: NetName=move_row_2 Pin=J_pico_4-2
+Removed Pin From Net: NetName=move_row_3 Pin=J_pico_4-3
+Removed Pin From Net: NetName=move_row_3 Pin=J_pico_4-3
+Removed Pin From Net: NetName=move_row_3 Pin=J_pico_4-3
+Removed Pin From Net: NetName=move_row_3 Pin=J_pico_4-3
+Removed Pin From Net: NetName=move_row_4 Pin=J_pico_4-4
+Removed Pin From Net: NetName=move_row_4 Pin=J_pico_4-4
+Removed Pin From Net: NetName=move_row_4 Pin=J_pico_4-4
+Removed Pin From Net: NetName=move_row_4 Pin=J_pico_4-4
+Removed Pin From Net: NetName=VSYS Pin=J_pico_5-1
+Removed Pin From Net: NetName=VSYS Pin=J_pico_5-1
+Removed Pin From Net: NetName=VSYS Pin=J_pico_5-1
+Removed Pin From Net: NetName=VSYS Pin=J_pico_5-1
+Removed Pin From Net: NetName=EN Pin=J_pico_5-2
+Removed Pin From Net: NetName=EN Pin=J_pico_5-2
+Removed Pin From Net: NetName=EN Pin=J_pico_5-2
+Removed Pin From Net: NetName=EN Pin=J_pico_5-2
+Removed Pin From Net: NetName=AVREF Pin=J_pico_5-3
+Removed Pin From Net: NetName=AVREF Pin=J_pico_5-3
+Removed Pin From Net: NetName=AVREF Pin=J_pico_5-3
+Removed Pin From Net: NetName=AVREF Pin=J_pico_5-3
+Removed Pin From Net: NetName=3v3 Pin=J_pico_5-4
+Removed Pin From Net: NetName=3v3 Pin=J_pico_5-4
+Removed Pin From Net: NetName=3v3 Pin=J_pico_5-4
+Removed Pin From Net: NetName=3v3 Pin=J_pico_5-4
+Removed Pin From Net: NetName=SDA Pin=J_pico_6-1
+Removed Pin From Net: NetName=SDA Pin=J_pico_6-1
+Removed Pin From Net: NetName=SDA Pin=J_pico_6-1
+Removed Pin From Net: NetName=SDA Pin=J_pico_6-1
+Removed Pin From Net: NetName=SCL Pin=J_pico_6-2
+Removed Pin From Net: NetName=SCL Pin=J_pico_6-2
+Removed Pin From Net: NetName=SCL Pin=J_pico_6-2
+Removed Pin From Net: NetName=SCL Pin=J_pico_6-2
+Removed Pin From Net: NetName=VCC Pin=J_pico_6-3
+Removed Pin From Net: NetName=VCC Pin=J_pico_6-3
+Removed Pin From Net: NetName=VCC Pin=J_pico_6-3
+Removed Pin From Net: NetName=VCC Pin=J_pico_6-3
+Removed Pin From Net: NetName=GND Pin=J_pico_6-4
+Removed Pin From Net: NetName=GND Pin=J_pico_6-4
+Removed Pin From Net: NetName=GND Pin=J_pico_6-4
+Removed Pin From Net: NetName=GND Pin=J_pico_6-4
+Removed Pin From Net: NetName=move_row_1 Pin=J_sdklj-1
+Removed Pin From Net: NetName=move_row_2 Pin=J_sdklj-2
+Removed Pin From Net: NetName=move_row_3 Pin=J_sdklj-3
+Removed Pin From Net: NetName=move_row_4 Pin=J_sdklj-4
+Removed Pin From Net: NetName=move_row_1 Pin=J_sdklj-5
+Removed Pin From Net: NetName=move_row_2 Pin=J_sdklj-6
+Removed Pin From Net: NetName=move_row_3 Pin=J_sdklj-7
+Removed Pin From Net: NetName=move_row_4 Pin=J_sdklj-8
+Removed Pin From Net: NetName=move_row_1 Pin=J_sdklj-9
+Removed Pin From Net: NetName=move_row_2 Pin=J_sdklj-10
+Removed Member From Class: ClassName=Pico_pinout Member=_pico-1
+Removed Member From Class: ClassName=Pico_pinout Member=E1
+Removed Member From Class: ClassName=Pico_pinout Member=E2
+Removed Member From Class: ClassName=Pico_pinout Member=E3
+Removed Member From Class: ClassName=Pico_pinout Member=J_h
+Removed Member From Class: ClassName=Pico_pinout Member=J_pico_5
+Removed Member From Class: ClassName=Pico_pinout Member=J_pico_6
+Removed Member From Class: ClassName=Pico_pinout Member=Test
+Change Footprint: Cannot match pads with new footprint in component :J_pico_2 Footprint:FP-1985276-MFG
+Change Component Footprint: Designator=J_pico_3 Old Footprint=FP-1932601-MFG New Footprint=FP-1985276-MFG
+Change Component Footprint: Designator=J_pico_4 Old Footprint=FP-1932601-MFG New Footprint=FP-1985276-MFG
+Change Component Footprint: Designator=J_sdklj Old Footprint=FP-1985276-MFG New Footprint=FP-1985276-MFG
+Change Component Comment : Designator=J_pico_2 Old Comment=1932601 New Comment=1985276
+Change Component Comment : Designator=J_pico_3 Old Comment=1932601 New Comment=1985276
+Change Component Comment : Designator=J_pico_4 Old Comment=1932601 New Comment=1985276
+Change Component Designator: OldDesignator=J_sdklj NewDesignator=J_Pico_1
+Change Managed Component Library Link : Designator=J_pico_2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=ECF0C877-AFEB-4C47-BC82-EA77B70221A1 New ItemGUID=FA650945-D678-4A8B-AA61-951A9C3B1A4D Old RevisionGUID=9F73CB8C-AA71-4788-B446-5C406AC022DF New RevisionGUID=423727B1-55F0-4C0E-861D-FF565DAB358C
+Change Managed Component Library Link : Designator=J_pico_3 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=ECF0C877-AFEB-4C47-BC82-EA77B70221A1 New ItemGUID=FA650945-D678-4A8B-AA61-951A9C3B1A4D Old RevisionGUID=9F73CB8C-AA71-4788-B446-5C406AC022DF New RevisionGUID=423727B1-55F0-4C0E-861D-FF565DAB358C
+Change Managed Component Library Link : Designator=J_pico_4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=ECF0C877-AFEB-4C47-BC82-EA77B70221A1 New ItemGUID=FA650945-D678-4A8B-AA61-951A9C3B1A4D Old RevisionGUID=9F73CB8C-AA71-4788-B446-5C406AC022DF New RevisionGUID=423727B1-55F0-4C0E-861D-FF565DAB358C
+Change component parameters: Designator = "J_pico_2" ("J_Pico_2"); Footprint = "FP-1932601-MFG"; UniqueID = "\LUEEROWP" ("\LUEEROWP")
+Change component parameters (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Approvals"; Value = "UL, VDE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "12mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "13.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "12mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "128517"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Circuits"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Poles"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions Per Level"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stripping Length"; Value = "8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "300V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "4.93001g"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "36.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Min)"; Value = "20AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire/Cable Gauge"; Value = "16AWG"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_pico_3" ("J_Pico_3"); Footprint = "FP-1932601-MFG"; UniqueID = "\QQOFXMGO" ("\QQOFXMGO")
+Change component parameters (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Approvals"; Value = "UL, VDE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "12mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "13.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "12mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "128517"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Circuits"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Poles"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions Per Level"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stripping Length"; Value = "8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "300V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "4.93001g"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "36.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Min)"; Value = "20AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire/Cable Gauge"; Value = "16AWG"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J_pico_4" ("J_Pico_4"); Footprint = "FP-1932601-MFG"; UniqueID = "\DJMGSLBC" ("\DJMGSLBC")
+Change component parameters (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Approvals"; Value = "UL, VDE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "12mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "13.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "12mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "128517"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Circuits"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Poles"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions Per Level"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "3.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stripping Length"; Value = "8mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "300V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "4.93001g"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "36.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire Gauge (Min)"; Value = "20AWG"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Wire/Cable Gauge"; Value = "16AWG"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=key_column_1 Pin=J_Pico_1-1
+Added Pin To Net: NetName=key_column_2 Pin=J_Pico_1-2
+Added Pin To Net: NetName=key_column_3 Pin=J_Pico_1-3
+Added Pin To Net: NetName=key_column_4 Pin=J_Pico_1-4
+Added Pin To Net: NetName=key_column_5 Pin=J_Pico_1-5
+Added Pin To Net: NetName=move_row_1 Pin=J_Pico_1-6
+Added Pin To Net: NetName=move_row_2 Pin=J_Pico_1-7
+Added Pin To Net: NetName=move_row_3 Pin=J_Pico_1-8
+Added Pin To Net: NetName=move_row_4 Pin=J_Pico_1-9
+Added Pin To Net: NetName=move_row_5 Pin=J_Pico_1-10
+Add Pin To Net: Unknown Pin: Pin J_Pico_2-5
+Add Pin To Net: Unknown Pin: Pin J_Pico_2-6
+Add Pin To Net: Unknown Pin: Pin J_Pico_2-7
+Add Pin To Net: Unknown Pin: Pin J_Pico_2-8
+Add Pin To Net: Unknown Pin: Pin J_Pico_2-9
+Add Pin To Net: Unknown Pin: Pin J_Pico_2-10
+Added Pin To Net: NetName=flag_1 Pin=J_pico_3-1
+Added Pin To Net: NetName=flag_2 Pin=J_pico_3-2
+Added Pin To Net: NetName=flag_3 Pin=J_pico_3-3
+Added Pin To Net: NetName=flag_4 Pin=J_pico_3-4
+Added Pin To Net: NetName=flag_5 Pin=J_pico_3-5
+Added Pin To Net: NetName=flag_6 Pin=J_pico_3-6
+Added Pin To Net: NetName=flag_7 Pin=J_pico_3-7
+Added Pin To Net: NetName=flag_8 Pin=J_pico_3-8
+Added Pin To Net: NetName=VCC Pin=J_pico_3-9
+Added Pin To Net: NetName=VCC Pin=J_pico_3-10
+Added Pin To Net: NetName=SDA Pin=J_pico_4-7
+Added Pin To Net: NetName=SCL Pin=J_pico_4-8
+Added Pin To Net: NetName=GND Pin=J_pico_4-9
+Added Pin To Net: NetName=VCC Pin=J_pico_4-10
+Added Pin To Net: NetName=NetJ_Pico_4_1 Pin=J_pico_4-1
+Added Pin To Net: NetName=NetJ_Pico_4_1 Pin=Pico-49
+Added Net: Name=NetJ_Pico_4_1
+Added Pin To Net: NetName=NetJ_Pico_4_2 Pin=J_pico_4-2
+Added Pin To Net: NetName=NetJ_Pico_4_2 Pin=Pico-48
+Added Net: Name=NetJ_Pico_4_2
+Added Pin To Net: NetName=NetJ_Pico_4_3 Pin=J_pico_4-3
+Added Pin To Net: NetName=NetJ_Pico_4_3 Pin=Pico-47
+Added Net: Name=NetJ_Pico_4_3
+Added Pin To Net: NetName=NetJ_Pico_4_4 Pin=J_pico_4-4
+Added Pin To Net: NetName=NetJ_Pico_4_4 Pin=Pico-46
+Added Net: Name=NetJ_Pico_4_4
+Added Pin To Net: NetName=NetJ_Pico_4_5 Pin=J_pico_4-5
+Added Pin To Net: NetName=NetJ_Pico_4_5 Pin=Pico-45
+Added Net: Name=NetJ_Pico_4_5
+Added Pin To Net: NetName=NetJ_Pico_4_6 Pin=J_pico_4-6
+Added Pin To Net: NetName=NetJ_Pico_4_6 Pin=Pico-44
+Added Net: Name=NetJ_Pico_4_6

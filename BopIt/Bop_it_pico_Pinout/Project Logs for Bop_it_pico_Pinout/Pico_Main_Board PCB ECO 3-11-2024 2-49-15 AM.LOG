@@ -1,0 +1,191 @@
+Removed Pin From Net: NetName=kill_row_1 Pin=E?-A5
+Removed Pin From Net: NetName=kill_row_1 Pin=E?-A5
+Removed Pin From Net: NetName=kill_row_2 Pin=E?-A6
+Removed Pin From Net: NetName=kill_row_2 Pin=E?-A6
+Removed Pin From Net: NetName=kill_row_3 Pin=E?-A7
+Removed Pin From Net: NetName=kill_row_3 Pin=E?-A7
+Removed Pin From Net: NetName=kill_row_4 Pin=E?-A8
+Removed Pin From Net: NetName=kill_row_4 Pin=E?-A8
+Removed Pin From Net: NetName=key_column_1 Pin=J_pico_1-1
+Removed Pin From Net: NetName=key_column_1 Pin=J_pico_1-1
+Removed Pin From Net: NetName=key_column_1 Pin=J_pico_1-1
+Removed Pin From Net: NetName=key_column_1 Pin=J_pico_1-1
+Removed Pin From Net: NetName=key_column_2 Pin=J_pico_1-2
+Removed Pin From Net: NetName=key_column_2 Pin=J_pico_1-2
+Removed Pin From Net: NetName=key_column_2 Pin=J_pico_1-2
+Removed Pin From Net: NetName=key_column_2 Pin=J_pico_1-2
+Removed Pin From Net: NetName=key_column_3 Pin=J_pico_1-3
+Removed Pin From Net: NetName=key_column_3 Pin=J_pico_1-3
+Removed Pin From Net: NetName=key_column_3 Pin=J_pico_1-3
+Removed Pin From Net: NetName=key_column_3 Pin=J_pico_1-3
+Removed Pin From Net: NetName=key_column_4 Pin=J_pico_1-4
+Removed Pin From Net: NetName=key_column_4 Pin=J_pico_1-4
+Removed Pin From Net: NetName=key_column_4 Pin=J_pico_1-4
+Removed Pin From Net: NetName=key_column_4 Pin=J_pico_1-4
+Removed Pin From Net: NetName=key_column_5 Pin=J_pico_3-1
+Removed Pin From Net: NetName=key_column_5 Pin=J_pico_3-1
+Removed Pin From Net: NetName=key_column_5 Pin=J_pico_3-1
+Removed Pin From Net: NetName=key_column_5 Pin=J_pico_3-1
+Removed Pin From Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Removed Pin From Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Removed Pin From Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Removed Pin From Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Removed Pin From Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Removed Pin From Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Removed Pin From Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Removed Pin From Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Removed Pin From Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Removed Pin From Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Removed Pin From Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Removed Pin From Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Removed Pin From Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Removed Pin From Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Removed Pin From Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Removed Pin From Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Removed Pin From Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Removed Pin From Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Removed Pin From Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Removed Pin From Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Removed Pin From Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Removed Pin From Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Removed Pin From Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Removed Pin From Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Removed Pin From Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Removed Pin From Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Removed Pin From Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Removed Pin From Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Removed Pin From Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Removed Pin From Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Removed Pin From Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Removed Pin From Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Removed Member From Class: ClassName=Pico_pinout Member=J_pico_1
+Removed Member From Class: ClassName=Pico_pinout Member=J_pico_flags_1
+Removed Member From Class: ClassName=Pico_pinout Member=J_pico_flags_2
+Change Component Designator: OldDesignator=E? NewDesignator=E1
+Added Component: Designator=E2(LSF_SMT_5_00_135_08)
+Add component (AddParameter): Name = "Colour"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.weidmueller.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "URL Link1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://catalog.weidmueller.com/catalog/Start.do?localeId=en&ObjectID=1884420000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_material"; Value = "Cu-Leg"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_surface"; Value = "tinned"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulating_material"; Value = "LCP GF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Weidmueller"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting_onto_the_PCB"; Value = "Reflow solder connection"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "No_of_poles"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LSF_SMT_5_00_135_08"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "1884420000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch_inch"; Value = "0,197 inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch_mm"; Value = "5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qty"; Value = "14 PCS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_current_min_no_of_poles_TU_20_deg_C"; Value = "19 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_current_use_group_B_UL_1059"; Value = "12 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_voltage_for_surge_voltage_class_pollution_degree_II_2"; Value = "500 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_voltage_use_group_B_UL_1059"; Value = "300 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "V1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Short_text_for_material"; Value = "LSF-SMT 5.00/08/135 3.5SN BK TU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Side_termination_characteristic"; Value = "closed side"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Solder_pin_length_mm"; Value = "3,5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Solid_max_H05_07_V_U"; Value = "1,5 mm²"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Solid_min_H05_07_V_U"; Value = "0,2 mm²"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "UL_94_flammability_rating"; Value = "V-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire_cross_section_AWG_max_UL_1059"; Value = "AWG 16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire_cross_section_AWG_min_UL_1059"; Value = "AWG 24"; VariantName = "[No Variations]"
+Added Component: Designator=E3(LSF_SMT_5_00_135_08)
+Add component (AddParameter): Name = "Colour"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.weidmueller.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "URL Link1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://catalog.weidmueller.com/catalog/Start.do?localeId=en&ObjectID=1884420000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_material"; Value = "Cu-Leg"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_surface"; Value = "tinned"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulating_material"; Value = "LCP GF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Weidmueller"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting_onto_the_PCB"; Value = "Reflow solder connection"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "No_of_poles"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LSF_SMT_5_00_135_08"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "1884420000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch_inch"; Value = "0,197 inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch_mm"; Value = "5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Qty"; Value = "14 PCS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_current_min_no_of_poles_TU_20_deg_C"; Value = "19 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_current_use_group_B_UL_1059"; Value = "12 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_voltage_for_surge_voltage_class_pollution_degree_II_2"; Value = "500 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated_voltage_use_group_B_UL_1059"; Value = "300 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Revision"; Value = "V1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Short_text_for_material"; Value = "LSF-SMT 5.00/08/135 3.5SN BK TU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Side_termination_characteristic"; Value = "closed side"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Solder_pin_length_mm"; Value = "3,5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Solid_max_H05_07_V_U"; Value = "1,5 mm²"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Solid_min_H05_07_V_U"; Value = "0,2 mm²"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "UL_94_flammability_rating"; Value = "V-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire_cross_section_AWG_max_UL_1059"; Value = "AWG 16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire_cross_section_AWG_min_UL_1059"; Value = "AWG 24"; VariantName = "[No Variations]"
+Added Component: Designator=J_h(691709710305)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "6A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "6A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Flammability Rating"; Value = "UL94 V-0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "130°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "34171772"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Plating"; Value = "Steel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "300V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "30AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "14AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire/Cable Gauge"; Value = "30AWG"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=key_column_5 Pin=E1-A5
+Added Pin To Net: NetName=key_column_5 Pin=E1-A5
+Added Pin To Net: NetName=key_column_1 Pin=E1-A6
+Added Pin To Net: NetName=key_column_1 Pin=E1-A6
+Added Pin To Net: NetName=key_column_2 Pin=E1-A7
+Added Pin To Net: NetName=key_column_2 Pin=E1-A7
+Added Pin To Net: NetName=key_column_3 Pin=E1-A8
+Added Pin To Net: NetName=key_column_3 Pin=E1-A8
+Added Pin To Net: NetName=flag_1 Pin=E2-A1
+Added Pin To Net: NetName=flag_1 Pin=E2-A1
+Added Pin To Net: NetName=flag_2 Pin=E2-A2
+Added Pin To Net: NetName=flag_2 Pin=E2-A2
+Added Pin To Net: NetName=flag_3 Pin=E2-A3
+Added Pin To Net: NetName=flag_3 Pin=E2-A3
+Added Pin To Net: NetName=flag_4 Pin=E2-A4
+Added Pin To Net: NetName=flag_4 Pin=E2-A4
+Added Pin To Net: NetName=flag_5 Pin=E2-A5
+Added Pin To Net: NetName=flag_5 Pin=E2-A5
+Added Pin To Net: NetName=flag_6 Pin=E2-A6
+Added Pin To Net: NetName=flag_6 Pin=E2-A6
+Added Pin To Net: NetName=flag_7 Pin=E2-A7
+Added Pin To Net: NetName=flag_7 Pin=E2-A7
+Added Pin To Net: NetName=flag_8 Pin=E2-A8
+Added Pin To Net: NetName=flag_8 Pin=E2-A8
+Added Pin To Net: NetName=key_column_1 Pin=J_h-1
+Added Pin To Net: NetName=key_column_2 Pin=J_h-2
+Added Pin To Net: NetName=key_column_3 Pin=J_h-3
+Added Pin To Net: NetName=key_column_4 Pin=J_h-4
+Added Pin To Net: NetName=VCC Pin=J_pico_3-1
+Added Pin To Net: NetName=VCC Pin=J_pico_3-1
+Added Pin To Net: NetName=VCC Pin=J_pico_3-1
+Added Pin To Net: NetName=VCC Pin=J_pico_3-1
+Added Member To Class: ClassName=Pico_pinout Member=Component E2 1884420000
+Added Member To Class: ClassName=Pico_pinout Member=Component E3 1884420000
+Added Member To Class: ClassName=Pico_pinout Member=Component J_h 691709710305

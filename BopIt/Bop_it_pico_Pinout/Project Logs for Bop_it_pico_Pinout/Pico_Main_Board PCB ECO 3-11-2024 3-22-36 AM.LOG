@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=kill_row_1 Pin=J_pico_2-1
+Removed Pin From Net: NetName=kill_row_1 Pin=J_pico_2-1
+Removed Pin From Net: NetName=kill_row_1 Pin=J_pico_2-1
+Removed Pin From Net: NetName=kill_row_1 Pin=J_pico_2-1
+Removed Pin From Net: NetName=kill_row_2 Pin=J_pico_2-2
+Removed Pin From Net: NetName=kill_row_2 Pin=J_pico_2-2
+Removed Pin From Net: NetName=kill_row_2 Pin=J_pico_2-2
+Removed Pin From Net: NetName=kill_row_2 Pin=J_pico_2-2
+Removed Pin From Net: NetName=kill_row_3 Pin=J_pico_2-3
+Removed Pin From Net: NetName=kill_row_3 Pin=J_pico_2-3
+Removed Pin From Net: NetName=kill_row_3 Pin=J_pico_2-3
+Removed Pin From Net: NetName=kill_row_3 Pin=J_pico_2-3
+Removed Pin From Net: NetName=kill_row_4 Pin=J_pico_2-4
+Removed Pin From Net: NetName=kill_row_4 Pin=J_pico_2-4
+Removed Pin From Net: NetName=kill_row_4 Pin=J_pico_2-4
+Removed Pin From Net: NetName=kill_row_4 Pin=J_pico_2-4
+Removed Member From Class: ClassName=Pico_pinout Member=J_pico_2

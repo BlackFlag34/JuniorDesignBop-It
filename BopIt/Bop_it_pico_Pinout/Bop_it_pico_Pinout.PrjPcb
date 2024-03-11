@@ -100,6 +100,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QHRFYKNY
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Bop_it_pico_Pinout\Design Rule Check - Pico_Main_Board.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=C:\Users\tyqca\OneDrive\School\GitHub\JuniorDesignBop-It\BopIt\RP2040.LibPkg\*.*
 IncludeSubFolders=1

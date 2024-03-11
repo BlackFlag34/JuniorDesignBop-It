@@ -1,0 +1,14 @@
+Added Component: Designator=_pico-1(691256610004)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "10.16mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871309"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=key_column_1 Pin=_pico-1-1
+Added Pin To Net: NetName=key_column_1 Pin=_pico-1-1
+Added Pin To Net: NetName=key_column_2 Pin=_pico-1-2
+Added Pin To Net: NetName=key_column_2 Pin=_pico-1-2
+Added Pin To Net: NetName=key_column_3 Pin=_pico-1-3
+Added Pin To Net: NetName=key_column_3 Pin=_pico-1-3
+Added Pin To Net: NetName=key_column_4 Pin=_pico-1-4
+Added Pin To Net: NetName=key_column_4 Pin=_pico-1-4
+Added Member To Class: ClassName=Pico_pinout Member=Component _pico-1 691256610004
