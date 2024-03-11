@@ -1,0 +1,55 @@
+Added Component: Designator=Pico(RPI-PICO-MOD)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Raspberry Pi Foundation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part No"; Value = "SC0915"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "DigiKey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Link"; Value = "https://www.digikey.com/en/products/detail/raspberry-pi/SC0915/13684020"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part No"; Value = "2648-SC0915CT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=key_column_1 Pin=Pico-1
+Added Pin To Net: NetName=key_column_2 Pin=Pico-2
+Added Pin To Net: NetName=GND Pin=Pico-3
+Added Pin To Net: NetName=key_column_3 Pin=Pico-4
+Added Pin To Net: NetName=key_column_4 Pin=Pico-5
+Added Pin To Net: NetName=SDA Pin=Pico-6
+Added Pin To Net: NetName=SCL Pin=Pico-7
+Added Pin To Net: NetName=GND Pin=Pico-8
+Added Pin To Net: NetName=key_column_5 Pin=Pico-9
+Added Pin To Net: NetName=start_button Pin=Pico-10
+Added Pin To Net: NetName=flag_1 Pin=Pico-11
+Added Pin To Net: NetName=flag_2 Pin=Pico-12
+Added Pin To Net: NetName=GND Pin=Pico-13
+Added Pin To Net: NetName=flag_3 Pin=Pico-14
+Added Pin To Net: NetName=flag_4 Pin=Pico-15
+Added Pin To Net: NetName=flag_5 Pin=Pico-16
+Added Pin To Net: NetName=flag_6 Pin=Pico-17
+Added Pin To Net: NetName=GND Pin=Pico-18
+Added Pin To Net: NetName=flag_7 Pin=Pico-19
+Added Pin To Net: NetName=flag_8 Pin=Pico-20
+Added Pin To Net: NetName=move_row_5 Pin=Pico-21
+Added Pin To Net: NetName=kill_row_5 Pin=Pico-22
+Added Pin To Net: NetName=GND Pin=Pico-23
+Added Pin To Net: NetName=move_row_4 Pin=Pico-24
+Added Pin To Net: NetName=kill_row_4 Pin=Pico-25
+Added Pin To Net: NetName=move_row_3 Pin=Pico-26
+Added Pin To Net: NetName=kill_row_3 Pin=Pico-27
+Added Pin To Net: NetName=GND Pin=Pico-28
+Added Pin To Net: NetName=move_row_2 Pin=Pico-29
+Added Pin To Net: NetName=restart_button Pin=Pico-30
+Added Pin To Net: NetName=kill_row_2 Pin=Pico-31
+Added Pin To Net: NetName=move_row_1 Pin=Pico-32
+Added Pin To Net: NetName=GND Pin=Pico-33
+Added Pin To Net: NetName=kill_row_1 Pin=Pico-34
+Added Pin To Net: NetName=AVREF Pin=Pico-35
+Added Pin To Net: NetName=3v3 Pin=Pico-36
+Added Pin To Net: NetName=EN Pin=Pico-37
+Added Pin To Net: NetName=GND Pin=Pico-38
+Added Pin To Net: NetName=VSYS Pin=Pico-39
+Added Pin To Net: NetName=VCC Pin=Pico-40
+Added Pin To Net: NetName=GND Pin=Pico-42
+Added Pin To Net: NetName=NetPico_44 Pin=Pico-44
+Added Pin To Net: NetName=NetPico_45 Pin=Pico-45
+Added Pin To Net: NetName=NetPico_46 Pin=Pico-46
+Added Pin To Net: NetName=NetPico_47 Pin=Pico-47
+Added Pin To Net: NetName=NetPico_48 Pin=Pico-48
+Added Pin To Net: NetName=NetPico_49 Pin=Pico-49
+Added Member To Class: ClassName=Pico_pinout Member=Component Pico *

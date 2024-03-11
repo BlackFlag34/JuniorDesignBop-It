@@ -1,0 +1,94 @@
+Change Component Footprint: Designator=J_pico_1 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_2 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_3 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_4 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_5 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_6 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_flags_1 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Change Component Footprint: Designator=J_pico_flags_2 Old Footprint=FP-1932601-MFG New Footprint=FP-1932601-MFG
+Add Component: Footprint Not Found RPI-PICO-MOD
+Added Component: Designator=Test(61300611121)
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "5.9944mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "8.89mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "PBT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "20084590"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Supply Voltage"; Value = "250V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin Pico-1
+Add Pin To Net: Unknown Pin: Pin Pico-2
+Add Pin To Net: Unknown Pin: Pin Pico-3
+Add Pin To Net: Unknown Pin: Pin Pico-4
+Add Pin To Net: Unknown Pin: Pin Pico-5
+Add Pin To Net: Unknown Pin: Pin Pico-6
+Add Pin To Net: Unknown Pin: Pin Pico-7
+Add Pin To Net: Unknown Pin: Pin Pico-8
+Add Pin To Net: Unknown Pin: Pin Pico-9
+Add Pin To Net: Unknown Pin: Pin Pico-10
+Add Pin To Net: Unknown Pin: Pin Pico-11
+Add Pin To Net: Unknown Pin: Pin Pico-12
+Add Pin To Net: Unknown Pin: Pin Pico-13
+Add Pin To Net: Unknown Pin: Pin Pico-14
+Add Pin To Net: Unknown Pin: Pin Pico-15
+Add Pin To Net: Unknown Pin: Pin Pico-16
+Add Pin To Net: Unknown Pin: Pin Pico-17
+Add Pin To Net: Unknown Pin: Pin Pico-18
+Add Pin To Net: Unknown Pin: Pin Pico-19
+Add Pin To Net: Unknown Pin: Pin Pico-20
+Add Pin To Net: Unknown Pin: Pin Pico-21
+Add Pin To Net: Unknown Pin: Pin Pico-22
+Add Pin To Net: Unknown Pin: Pin Pico-23
+Add Pin To Net: Unknown Pin: Pin Pico-24
+Add Pin To Net: Unknown Pin: Pin Pico-25
+Add Pin To Net: Unknown Pin: Pin Pico-26
+Add Pin To Net: Unknown Pin: Pin Pico-27
+Add Pin To Net: Unknown Pin: Pin Pico-28
+Add Pin To Net: Unknown Pin: Pin Pico-29
+Add Pin To Net: Unknown Pin: Pin Pico-30
+Add Pin To Net: Unknown Pin: Pin Pico-31
+Add Pin To Net: Unknown Pin: Pin Pico-32
+Add Pin To Net: Unknown Pin: Pin Pico-33
+Add Pin To Net: Unknown Pin: Pin Pico-34
+Add Pin To Net: Unknown Pin: Pin Pico-35
+Add Pin To Net: Unknown Pin: Pin Pico-36
+Add Pin To Net: Unknown Pin: Pin Pico-37
+Add Pin To Net: Unknown Pin: Pin Pico-38
+Add Pin To Net: Unknown Pin: Pin Pico-39
+Add Pin To Net: Unknown Pin: Pin Pico-40
+Add Pin To Net: Unknown Pin: Pin Pico-42
+Added Pin To Net: NetName=NetPico_44 Pin=Test-1
+Added Net: Name=NetPico_44
+Added Pin To Net: NetName=NetPico_45 Pin=Test-2
+Added Net: Name=NetPico_45
+Added Pin To Net: NetName=NetPico_46 Pin=Test-3
+Added Net: Name=NetPico_46
+Added Pin To Net: NetName=NetPico_47 Pin=Test-4
+Added Net: Name=NetPico_47
+Added Pin To Net: NetName=NetPico_48 Pin=Test-5
+Added Net: Name=NetPico_48
+Added Pin To Net: NetName=NetPico_49 Pin=Test-6
+Added Net: Name=NetPico_49
+Add Class Member: Failed to add class member : Component Pico *
+Added Member To Class: ClassName=Pico_pinout Member=Component Test 61300611121

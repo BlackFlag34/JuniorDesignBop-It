@@ -1,0 +1,594 @@
+Added Component: Designator=J_pico_1(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_2(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_3(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_4(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_5(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_6(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_flags_1(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Added Component: Designator=J_pico_flags_2(FP-1932601-MFG)
+Add component (AddParameter): Name = "Ambient Temperature Range High"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Approvals"; Value = "CB, UL, VDE, cULus"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "115A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "31mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "39.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Material"; Value = "Nylon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "125A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "100°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Supply Voltage"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "127891"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Levels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Poles"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions Per Level"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "15.0114mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stripping Length"; Value = "18mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "600V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "1kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "85.048569g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "60mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Max)"; Value = "20AWG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wire Gauge (Min)"; Value = "2AWG"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found RPI-PICO-MOD
+Added Component: Designator=R1(RESC3116X65X40ML10T20)
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "3216"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "ThickFilm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_5.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Rev. 5, 10/2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "LeadFree"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "3.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.yageo.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Military Standard"; Value = "Not"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "2-Pin Surface Mount Device, Body 3.1 x 1.6 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "5000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "1206.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "TapeandReel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "250mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10KOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "100ppm/degreesC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "200V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.6mm"; VariantName = "[No Variations]"
+Added Component: Designator=Restart(OMRON-B3F-4055_V)
+Add component (AddParameter): Name = "Actuator Color"; Value = "Orange"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Actuator Length"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Actuator Style"; Value = "ProjectedPlunger"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Base Material"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Body Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Rating @ Voltage"; Value = "0.05@24VDCA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/20148/78-0136-20148640.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "06/2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric Strength"; Value = "500VAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimension"; Value = "12x12x7.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Electrical Life"; Value = "1000000Cycles"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "B3F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ground Terminal"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Illumination Type"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "OmronElectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.omron.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum AC Voltage Rating"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum Contact Resistance"; Value = "100mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum DC Voltage Rating"; Value = "24V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mechanical Life"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Insulation Resistance"; Value = "100MOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "ThroughHole,PCPins"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "ThroughHole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Force"; Value = "2.55N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-25to70C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "4-Pin Through Hole Device, Body 12 x 12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "B3F-4055"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part No"; Value = "B3F-4055"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pole Throw Configuration"; Value = "SPST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Weight"; Value = "0.85g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Seal Description"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Seal Location"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switch Configuration"; Value = "N.O."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Miniature"; VariantName = "[No Variations]"
+Added Component: Designator=Start(OMRON-B3F-4055_V)
+Add component (AddParameter): Name = "Actuator Color"; Value = "Orange"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Actuator Length"; Value = "3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Actuator Style"; Value = "ProjectedPlunger"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Base Material"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Body Orientation"; Value = "Straight"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Rating @ Voltage"; Value = "0.05@24VDCA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/20148/78-0136-20148640.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "06/2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric Strength"; Value = "500VAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dimension"; Value = "12x12x7.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Electrical Life"; Value = "1000000Cycles"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "B3F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ground Terminal"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Illumination Type"; Value = "N/R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "OmronElectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.omron.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum AC Voltage Rating"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum Contact Resistance"; Value = "100mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Maximum DC Voltage Rating"; Value = "24V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mechanical Life"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Insulation Resistance"; Value = "100MOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting"; Value = "ThroughHole,PCPins"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "ThroughHole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Force"; Value = "2.55N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-25to70C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "4-Pin Through Hole Device, Body 12 x 12 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "B3F-4055"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part No"; Value = "B3F-4055"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pole Throw Configuration"; Value = "SPST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Weight"; Value = "0.85g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Seal Description"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Seal Location"; Value = "N/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switch Configuration"; Value = "N.O."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Miniature"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3v3 Pin=J_pico_5-4
+Added Pin To Net: NetName=3v3 Pin=J_pico_5-4
+Added Pin To Net: NetName=3v3 Pin=J_pico_5-4
+Added Pin To Net: NetName=3v3 Pin=J_pico_5-4
+Added Net: Name=3v3
+Added Pin To Net: NetName=AVREF Pin=J_pico_5-3
+Added Pin To Net: NetName=AVREF Pin=J_pico_5-3
+Added Pin To Net: NetName=AVREF Pin=J_pico_5-3
+Added Pin To Net: NetName=AVREF Pin=J_pico_5-3
+Added Net: Name=AVREF
+Added Pin To Net: NetName=EN Pin=J_pico_5-2
+Added Pin To Net: NetName=EN Pin=J_pico_5-2
+Added Pin To Net: NetName=EN Pin=J_pico_5-2
+Added Pin To Net: NetName=EN Pin=J_pico_5-2
+Added Net: Name=EN
+Added Pin To Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Added Pin To Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Added Pin To Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Added Pin To Net: NetName=flag_1 Pin=J_pico_flags_1-1
+Added Net: Name=flag_1
+Added Pin To Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Added Pin To Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Added Pin To Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Added Pin To Net: NetName=flag_2 Pin=J_pico_flags_1-2
+Added Net: Name=flag_2
+Added Pin To Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Added Pin To Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Added Pin To Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Added Pin To Net: NetName=flag_3 Pin=J_pico_flags_1-3
+Added Net: Name=flag_3
+Added Pin To Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Added Pin To Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Added Pin To Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Added Pin To Net: NetName=flag_4 Pin=J_pico_flags_1-4
+Added Net: Name=flag_4
+Added Pin To Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Added Pin To Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Added Pin To Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Added Pin To Net: NetName=flag_5 Pin=J_pico_flags_2-1
+Added Net: Name=flag_5
+Added Pin To Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Added Pin To Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Added Pin To Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Added Pin To Net: NetName=flag_6 Pin=J_pico_flags_2-2
+Added Net: Name=flag_6
+Added Pin To Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Added Pin To Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Added Pin To Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Added Pin To Net: NetName=flag_7 Pin=J_pico_flags_2-3
+Added Net: Name=flag_7
+Added Pin To Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Added Pin To Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Added Pin To Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Added Pin To Net: NetName=flag_8 Pin=J_pico_flags_2-4
+Added Net: Name=flag_8
+Added Pin To Net: NetName=GND Pin=J_pico_6-4
+Added Pin To Net: NetName=GND Pin=J_pico_6-4
+Added Pin To Net: NetName=GND Pin=J_pico_6-4
+Added Pin To Net: NetName=GND Pin=J_pico_6-4
+Added Pin To Net: NetName=GND Pin=Restart-3
+Added Pin To Net: NetName=GND Pin=Restart-4
+Added Net: Name=GND
+Added Pin To Net: NetName=key_column_1 Pin=J_pico_1-1
+Added Pin To Net: NetName=key_column_1 Pin=J_pico_1-1
+Added Pin To Net: NetName=key_column_1 Pin=J_pico_1-1
+Added Pin To Net: NetName=key_column_1 Pin=J_pico_1-1
+Added Net: Name=key_column_1
+Added Pin To Net: NetName=key_column_2 Pin=J_pico_1-2
+Added Pin To Net: NetName=key_column_2 Pin=J_pico_1-2
+Added Pin To Net: NetName=key_column_2 Pin=J_pico_1-2
+Added Pin To Net: NetName=key_column_2 Pin=J_pico_1-2
+Added Net: Name=key_column_2
+Added Pin To Net: NetName=key_column_3 Pin=J_pico_1-3
+Added Pin To Net: NetName=key_column_3 Pin=J_pico_1-3
+Added Pin To Net: NetName=key_column_3 Pin=J_pico_1-3
+Added Pin To Net: NetName=key_column_3 Pin=J_pico_1-3
+Added Net: Name=key_column_3
+Added Pin To Net: NetName=key_column_4 Pin=J_pico_1-4
+Added Pin To Net: NetName=key_column_4 Pin=J_pico_1-4
+Added Pin To Net: NetName=key_column_4 Pin=J_pico_1-4
+Added Pin To Net: NetName=key_column_4 Pin=J_pico_1-4
+Added Net: Name=key_column_4
+Added Pin To Net: NetName=key_column_5 Pin=J_pico_3-1
+Added Pin To Net: NetName=key_column_5 Pin=J_pico_3-1
+Added Pin To Net: NetName=key_column_5 Pin=J_pico_3-1
+Added Pin To Net: NetName=key_column_5 Pin=J_pico_3-1
+Added Net: Name=key_column_5
+Added Pin To Net: NetName=kill_row_1 Pin=J_pico_2-1
+Added Pin To Net: NetName=kill_row_1 Pin=J_pico_2-1
+Added Pin To Net: NetName=kill_row_1 Pin=J_pico_2-1
+Added Pin To Net: NetName=kill_row_1 Pin=J_pico_2-1
+Added Net: Name=kill_row_1
+Added Pin To Net: NetName=kill_row_2 Pin=J_pico_2-2
+Added Pin To Net: NetName=kill_row_2 Pin=J_pico_2-2
+Added Pin To Net: NetName=kill_row_2 Pin=J_pico_2-2
+Added Pin To Net: NetName=kill_row_2 Pin=J_pico_2-2
+Added Net: Name=kill_row_2
+Added Pin To Net: NetName=kill_row_3 Pin=J_pico_2-3
+Added Pin To Net: NetName=kill_row_3 Pin=J_pico_2-3
+Added Pin To Net: NetName=kill_row_3 Pin=J_pico_2-3
+Added Pin To Net: NetName=kill_row_3 Pin=J_pico_2-3
+Added Net: Name=kill_row_3
+Added Pin To Net: NetName=kill_row_4 Pin=J_pico_2-4
+Added Pin To Net: NetName=kill_row_4 Pin=J_pico_2-4
+Added Pin To Net: NetName=kill_row_4 Pin=J_pico_2-4
+Added Pin To Net: NetName=kill_row_4 Pin=J_pico_2-4
+Added Net: Name=kill_row_4
+Added Pin To Net: NetName=kill_row_5 Pin=J_pico_3-2
+Added Pin To Net: NetName=kill_row_5 Pin=J_pico_3-2
+Added Pin To Net: NetName=kill_row_5 Pin=J_pico_3-2
+Added Pin To Net: NetName=kill_row_5 Pin=J_pico_3-2
+Added Net: Name=kill_row_5
+Added Pin To Net: NetName=move_row_1 Pin=J_pico_4-1
+Added Pin To Net: NetName=move_row_1 Pin=J_pico_4-1
+Added Pin To Net: NetName=move_row_1 Pin=J_pico_4-1
+Added Pin To Net: NetName=move_row_1 Pin=J_pico_4-1
+Added Net: Name=move_row_1
+Added Pin To Net: NetName=move_row_2 Pin=J_pico_4-2
+Added Pin To Net: NetName=move_row_2 Pin=J_pico_4-2
+Added Pin To Net: NetName=move_row_2 Pin=J_pico_4-2
+Added Pin To Net: NetName=move_row_2 Pin=J_pico_4-2
+Added Net: Name=move_row_2
+Added Pin To Net: NetName=move_row_3 Pin=J_pico_4-3
+Added Pin To Net: NetName=move_row_3 Pin=J_pico_4-3
+Added Pin To Net: NetName=move_row_3 Pin=J_pico_4-3
+Added Pin To Net: NetName=move_row_3 Pin=J_pico_4-3
+Added Net: Name=move_row_3
+Added Pin To Net: NetName=move_row_4 Pin=J_pico_4-4
+Added Pin To Net: NetName=move_row_4 Pin=J_pico_4-4
+Added Pin To Net: NetName=move_row_4 Pin=J_pico_4-4
+Added Pin To Net: NetName=move_row_4 Pin=J_pico_4-4
+Added Net: Name=move_row_4
+Added Pin To Net: NetName=move_row_5 Pin=J_pico_3-3
+Added Pin To Net: NetName=move_row_5 Pin=J_pico_3-3
+Added Pin To Net: NetName=move_row_5 Pin=J_pico_3-3
+Added Pin To Net: NetName=move_row_5 Pin=J_pico_3-3
+Added Net: Name=move_row_5
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=Start-3
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=restart_button Pin=Restart-1
+Added Pin To Net: NetName=restart_button Pin=Restart-2
+Added Net: Name=restart_button
+Added Pin To Net: NetName=SCL Pin=J_pico_6-2
+Added Pin To Net: NetName=SCL Pin=J_pico_6-2
+Added Pin To Net: NetName=SCL Pin=J_pico_6-2
+Added Pin To Net: NetName=SCL Pin=J_pico_6-2
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=J_pico_6-1
+Added Pin To Net: NetName=SDA Pin=J_pico_6-1
+Added Pin To Net: NetName=SDA Pin=J_pico_6-1
+Added Pin To Net: NetName=SDA Pin=J_pico_6-1
+Added Net: Name=SDA
+Added Pin To Net: NetName=start_button Pin=Start-1
+Added Pin To Net: NetName=start_button Pin=Start-2
+Added Net: Name=start_button
+Added Pin To Net: NetName=VCC Pin=J_pico_3-4
+Added Pin To Net: NetName=VCC Pin=J_pico_3-4
+Added Pin To Net: NetName=VCC Pin=J_pico_3-4
+Added Pin To Net: NetName=VCC Pin=J_pico_3-4
+Added Pin To Net: NetName=VCC Pin=J_pico_6-3
+Added Pin To Net: NetName=VCC Pin=J_pico_6-3
+Added Pin To Net: NetName=VCC Pin=J_pico_6-3
+Added Pin To Net: NetName=VCC Pin=J_pico_6-3
+Added Pin To Net: NetName=VCC Pin=R1-1
+Added Net: Name=VCC
+Added Pin To Net: NetName=VSYS Pin=J_pico_5-1
+Added Pin To Net: NetName=VSYS Pin=J_pico_5-1
+Added Pin To Net: NetName=VSYS Pin=J_pico_5-1
+Added Pin To Net: NetName=VSYS Pin=J_pico_5-1
+Added Net: Name=VSYS
+Added Class: Name=Pico_pinout
