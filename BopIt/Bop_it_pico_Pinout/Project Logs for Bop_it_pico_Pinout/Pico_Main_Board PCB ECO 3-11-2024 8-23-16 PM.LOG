@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=VCC Pin=J10-1
+Removed Pin From Net: NetName=EN Pin=J10-3
+Removed Pin From Net: NetName=3v3 Pin=J11-1
+Removed Pin From Net: NetName=AVREF Pin=J11-2
+Removed Pin From Net: NetName=kill_row_1 Pin=J12-1
+Removed Pin From Net: NetName=kill_row_2 Pin=J12-3
+Removed Pin From Net: NetName=move_row_2 Pin=J13-1
+Removed Pin From Net: NetName=kill_row_3 Pin=J13-2
+Removed Pin From Net: NetName=move_row_3 Pin=J14-1
+Removed Pin From Net: NetName=move_row_4 Pin=J14-3
+Removed Pin From Net: NetName=kill_row_5 Pin=J15-1
+Removed Pin From Net: NetName=move_row_5 Pin=J15-2
+Change Component Footprint: Designator=J4 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J5 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J6 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J9 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J11 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J13 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J15 Old Footprint=691137710002 New Footprint=691137710002
+Change Component Footprint: Designator=J1 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J2 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J3 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J7 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J8 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J10 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J12 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J14 Old Footprint=691137710003 New Footprint=691137710003
+Change Component Footprint: Designator=J16 Old Footprint=691137710003 New Footprint=691137710003
+Added Pin To Net: NetName=EN Pin=J10-1
+Added Pin To Net: NetName=VCC Pin=J10-3
+Added Pin To Net: NetName=AVREF Pin=J11-1
+Added Pin To Net: NetName=3v3 Pin=J11-2
+Added Pin To Net: NetName=kill_row_2 Pin=J12-1
+Added Pin To Net: NetName=kill_row_1 Pin=J12-3
+Added Pin To Net: NetName=kill_row_3 Pin=J13-1
+Added Pin To Net: NetName=move_row_2 Pin=J13-2
+Added Pin To Net: NetName=move_row_4 Pin=J14-1
+Added Pin To Net: NetName=move_row_3 Pin=J14-3
+Added Pin To Net: NetName=move_row_5 Pin=J15-1
+Added Pin To Net: NetName=kill_row_5 Pin=J15-2

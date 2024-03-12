@@ -1,0 +1,256 @@
+Removed Pin From Net: NetName=move_row_5 Pin=J_Pico_1-1
+Removed Pin From Net: NetName=kill_row_5 Pin=J_Pico_1-2
+Removed Pin From Net: NetName=move_row_4 Pin=J_Pico_1-3
+Removed Pin From Net: NetName=kill_row_4 Pin=J_Pico_1-4
+Removed Pin From Net: NetName=move_row_3 Pin=J_Pico_1-5
+Removed Pin From Net: NetName=kill_row_3 Pin=J_Pico_1-6
+Removed Pin From Net: NetName=move_row_2 Pin=J_Pico_1-7
+Removed Pin From Net: NetName=kill_row_2 Pin=J_Pico_1-8
+Removed Pin From Net: NetName=move_row_1 Pin=J_Pico_1-9
+Removed Pin From Net: NetName=kill_row_1 Pin=J_Pico_1-10
+Removed Pin From Net: NetName=SDA Pin=J_Pico_2-1
+Removed Pin From Net: NetName=SCL Pin=J_Pico_2-2
+Removed Pin From Net: NetName=VSYS Pin=J_Pico_2-3
+Removed Pin From Net: NetName=EN Pin=J_Pico_2-4
+Removed Pin From Net: NetName=AVREF Pin=J_Pico_2-5
+Removed Pin From Net: NetName=3v3 Pin=J_Pico_2-6
+Removed Pin From Net: NetName=GND Pin=J_Pico_2-7
+Removed Pin From Net: NetName=VCC Pin=J_Pico_2-8
+Removed Pin From Net: NetName=start_button Pin=J_Pico_2-10
+Removed Pin From Net: NetName=key_column_5 Pin=J_Pico_3-1
+Removed Pin From Net: NetName=GND Pin=J_Pico_3-2
+Removed Pin From Net: NetName=flag_1 Pin=J_Pico_3-3
+Removed Pin From Net: NetName=flag_2 Pin=J_Pico_3-4
+Removed Pin From Net: NetName=flag_3 Pin=J_Pico_3-5
+Removed Pin From Net: NetName=flag_4 Pin=J_Pico_3-6
+Removed Pin From Net: NetName=flag_5 Pin=J_Pico_3-7
+Removed Pin From Net: NetName=flag_6 Pin=J_Pico_3-8
+Removed Pin From Net: NetName=flag_7 Pin=J_Pico_3-9
+Removed Pin From Net: NetName=flag_8 Pin=J_Pico_3-10
+Removed Pin From Net: NetName=TP1 Pin=J_Pico_4-1
+Removed Pin From Net: NetName=TP2 Pin=J_Pico_4-2
+Removed Pin From Net: NetName=TP3 Pin=J_Pico_4-3
+Removed Pin From Net: NetName=TP4 Pin=J_Pico_4-4
+Removed Pin From Net: NetName=TP5 Pin=J_Pico_4-5
+Removed Pin From Net: NetName=TP6 Pin=J_Pico_4-6
+Removed Pin From Net: NetName=key_column_1 Pin=J_Pico_4-7
+Removed Pin From Net: NetName=key_column_2 Pin=J_Pico_4-8
+Removed Pin From Net: NetName=key_column_3 Pin=J_Pico_4-9
+Removed Pin From Net: NetName=key_column_4 Pin=J_Pico_4-10
+Removed Member From Class: ClassName=Pico_pinout Member=J? _ needed?
+Removed Member From Class: ClassName=Pico_pinout Member=J_Pico_1
+Removed Member From Class: ClassName=Pico_pinout Member=J_Pico_2
+Removed Member From Class: ClassName=Pico_pinout Member=J_Pico_3
+Removed Member From Class: ClassName=Pico_pinout Member=J_Pico_4
+Added Component: Designator=J1(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J2(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J3(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J4(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J5(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J6(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J7(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J8(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J9(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J10(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J11(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J12(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J13(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J14(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=J15(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=J16(691137710003)
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TP1 Pin=J1-1
+Added Pin To Net: NetName=TP2 Pin=J1-2
+Added Pin To Net: NetName=TP3 Pin=J1-3
+Added Pin To Net: NetName=TP4 Pin=J2-1
+Added Pin To Net: NetName=TP5 Pin=J2-2
+Added Pin To Net: NetName=TP6 Pin=J2-3
+Added Pin To Net: NetName=key_column_1 Pin=J3-1
+Added Pin To Net: NetName=key_column_2 Pin=J3-2
+Added Pin To Net: NetName=key_column_3 Pin=J3-3
+Added Pin To Net: NetName=key_column_4 Pin=J4-1
+Added Pin To Net: NetName=key_column_5 Pin=J4-2
+Added Pin To Net: NetName=SDA Pin=J5-1
+Added Pin To Net: NetName=SCL Pin=J5-2
+Added Pin To Net: NetName=VCC Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-2
+Added Pin To Net: NetName=flag_1 Pin=J7-1
+Added Pin To Net: NetName=flag_2 Pin=J7-2
+Added Pin To Net: NetName=flag_3 Pin=J7-3
+Added Pin To Net: NetName=flag_4 Pin=J8-1
+Added Pin To Net: NetName=flag_5 Pin=J8-2
+Added Pin To Net: NetName=flag_6 Pin=J8-3
+Added Pin To Net: NetName=flag_7 Pin=J9-1
+Added Pin To Net: NetName=flag_8 Pin=J9-2
+Added Pin To Net: NetName=VCC Pin=J10-1
+Added Pin To Net: NetName=VSYS Pin=J10-2
+Added Pin To Net: NetName=EN Pin=J10-3
+Added Pin To Net: NetName=3v3 Pin=J11-1
+Added Pin To Net: NetName=AVREF Pin=J11-2
+Added Pin To Net: NetName=kill_row_1 Pin=J12-1
+Added Pin To Net: NetName=move_row_1 Pin=J12-2
+Added Pin To Net: NetName=kill_row_2 Pin=J12-3
+Added Pin To Net: NetName=move_row_2 Pin=J13-1
+Added Pin To Net: NetName=kill_row_3 Pin=J13-2
+Added Pin To Net: NetName=move_row_3 Pin=J14-1
+Added Pin To Net: NetName=kill_row_4 Pin=J14-2
+Added Pin To Net: NetName=move_row_4 Pin=J14-3
+Added Pin To Net: NetName=kill_row_5 Pin=J15-1
+Added Pin To Net: NetName=move_row_5 Pin=J15-2
+Added Pin To Net: NetName=start_button Pin=J16-1
+Added Pin To Net: NetName=restart_button Pin=J16-3
+Added Pin To Net: NetName=NetJ16_2 Pin=J16-2
+Added Pin To Net: NetName=NetJ16_2 Pin=R1-2
+Added Pin To Net: NetName=NetJ16_2 Pin=Start-3
+Added Net: Name=NetJ16_2
+Added Member To Class: ClassName=Pico_pinout Member=Component J1 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J2 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J3 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J4 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J5 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J6 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J7 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J8 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J9 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J10 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J11 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J12 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J13 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J14 691137710003
+Added Member To Class: ClassName=Pico_pinout Member=Component J15 691137710002
+Added Member To Class: ClassName=Pico_pinout Member=Component J16 691137710003

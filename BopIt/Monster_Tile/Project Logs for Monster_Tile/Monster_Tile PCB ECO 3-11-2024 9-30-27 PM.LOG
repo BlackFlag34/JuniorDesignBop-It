@@ -1,0 +1,58 @@
+Removed Pin From Net: NetName=key column Pin=c_in-1
+Removed Pin From Net: NetName=LED_column Pin=c_in-2
+Removed Pin From Net: NetName=key column Pin=c_out-1
+Removed Pin From Net: NetName=LED_column Pin=c_out-2
+Removed Member From Class: ClassName=Monster_Tile Member=c_in
+Removed Member From Class: ClassName=Monster_Tile Member=c_out
+Change Component Footprint: Designator=rows_in Old Footprint=61300311121 New Footprint=691137710003
+Change Component Footprint: Designator=rows_out Old Footprint=61300311121 New Footprint=691137710003
+Change Component Comment : Designator=rows_in Old Comment=61300311121 New Comment=691137710003
+Change Component Comment : Designator=rows_out Old Comment=61300311121 New Comment=691137710003
+Change Managed Component Library Link : Designator=rows_in Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=269DF539-B4AC-4FD7-969B-C5D684274D8B New ItemGUID=82E8A6D5-EFE4-4EFA-B6F8-557535CB6133 Old RevisionGUID=14C9BA54-4A7D-4F93-BA3E-AE223C389DC0 New RevisionGUID=5DC08822-AFDA-442A-944A-74F5F3CC47ED
+Change Managed Component Library Link : Designator=rows_out Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=269DF539-B4AC-4FD7-969B-C5D684274D8B New ItemGUID=82E8A6D5-EFE4-4EFA-B6F8-557535CB6133 Old RevisionGUID=14C9BA54-4A7D-4F93-BA3E-AE223C389DC0 New RevisionGUID=5DC08822-AFDA-442A-944A-74F5F3CC47ED
+Change component parameters: Designator = "rows_in" ("Rows_in"); Footprint = "61300311121"; UniqueID = "\EALHAGSA" ("\EALHAGSA")
+Change component parameters (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Change component parameters: Designator = "rows_out" ("Rows_out"); Footprint = "61300311121"; UniqueID = "\IWMJRVXM" ("\IWMJRVXM")
+Change component parameters (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "NexarPartId"; Value = "78871138"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Added Component: Designator=Columns _In(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Component: Designator=Columns_out(691137710002)
+Add component (AddParameter): Name = "Contact Material"; Value = "Nickel, Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "16A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Pitch"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "120°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-30°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "78871135"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Box"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Non-Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "300V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=key column Pin=Columns _In-1
+Added Pin To Net: NetName=LED_column Pin=Columns _In-2
+Added Pin To Net: NetName=key column Pin=Columns_out-1
+Added Pin To Net: NetName=LED_column Pin=Columns_out-2
+Added Member To Class: ClassName=Monster_Tile Member=Component Columns _In 691137710002
+Added Member To Class: ClassName=Monster_Tile Member=Component Columns_out 691137710002
