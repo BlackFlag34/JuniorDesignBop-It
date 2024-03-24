@@ -1,0 +1,22 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Bop_it_pico_Pinout.PrjPcb]
+   Generated File[Pico_Main_Board.GTO]
+   Generated File[Pico_Main_Board.GTP]
+   Generated File[Pico_Main_Board.GTS]
+   Generated File[Pico_Main_Board.GTL]
+   Generated File[Pico_Main_Board.GBL]
+   Generated File[Pico_Main_Board.GBS]
+   Generated File[Pico_Main_Board.GBP]
+   Generated File[Pico_Main_Board.GBO]
+   Generated File[Pico_Main_Board.GD1]
+   Generated File[Pico_Main_Board.GG1]
+   Generated File[Pico_Main_Board.GM]
+   Generated File[Pico_Main_Board.EXTREP]
+   Generated File[Pico_Main_Board.REP]
+
+
+Files Generated   : 13
+Documents Printed : 0
+
+Finished Output Generation At 3:57:07 AM On 3/17/2024
