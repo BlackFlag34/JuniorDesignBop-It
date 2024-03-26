@@ -3,8 +3,6 @@
 #include <Adafruit_GFX.h>
 #include "Adafruit_LEDBackpack.h"
 #include <Adafruit_PCF8574.h>
-#include <digitalWriteFast.h>
-
 
 #define I2C_ADDR1 0x20  //keys1
 #define I2C_ADDR2 0x21  //keys2
@@ -59,15 +57,17 @@ void setup() {
   for(int i = 0; i < 5; i++){
     pinMode(column[i], INPUT_PULLUP);
     pinMode(rowKill[i], OUTPUT);
-    digitalWriteFast(rowKill[i], HIGH);
+    digitalWrite(rowKill[i], HIGH);
     pinMode(rowMove[i], OUTPUT);
-    digitalWriteFast(rowMove[i], HIGH);
+    digitalWrite(rowMove[i], HIGH);
+    for(int j = 0; j < 5; j++){
+      lightStates[i][j] = false;
+    }
   }
   pinMode(specialVal0, OUTPUT);
   pinMode(specialVal1, OUTPUT);
   pinMode(assignBool, OUTPUT);
   pinMode(roundFlag, OUTPUT);
-  pinMode(startButton, INPUT);
   pinMode(startGameFlag, INPUT);
   pinMode(readyRound, OUTPUT);
   pinMode(specialDone, INPUT);
@@ -87,13 +87,10 @@ void setup() {
 void loop() {
   randomSeed(millis());
   if(!gameStart){
-    while(digitalRead(startGameFlag) == LOW){Serial.println("Waiting for startGameFlag");}
-    if(digitalRead(startGameFlag) == HIGH){
-    Serial.println("Game Initializing");
-    gameInitialize();}
+    while(digitalRead(startGameFlag) == LOW){}
+    gameInitialize();
   }
   while(!endGame && (score < 99)){
-    Serial.println("Starting New Round...");
     int failure = newRound();
     if(failure == 0){
       fails = 0;
@@ -117,8 +114,6 @@ void gameInitialize(){
   emptySpaces = 25;
 
   gameStart = true;
-
-  Serial.println("Game Initialized");
 }
 
 
@@ -126,7 +121,6 @@ void gameInitialize(){
 //function to read from the button board durring a round and update the lights
 void checkingValues(){
   readButtonBoard();
-  matrix.writeDisplay();
   if(digitalRead(specialDone) == HIGH){
     specialPlayerDone = true;
   }
@@ -134,12 +128,8 @@ void checkingValues(){
 
 
 //function to add monsters at the beginning of rounds
-bool addMonsters(){
+bool addMonsters(long monsterNumber){
   if(emptySpaces == 0){return false;}
-  randomSeed(millis());
-  //add monsters
-  long monsterNumber = random(roundNum, 10);
-  Serial.println("random number of monsters = " + String(monsterNumber));
   for(int k = 0; k < monsterNumber; k++){
     if(!placeMonster()){
       Serial.println("error, monster cannot be placed");
@@ -176,20 +166,30 @@ uint8_t newRound(){
   roundNum++;
   Serial.println("new round");
   endRound = false;
-  if(!addMonsters()){endGame = true; return 2;}
+  randomSeed(millis());
+  //add monsters
+  long monsterNumber = random(roundNum, 10);
+  Serial.println("random number of monsters = " + String(monsterNumber));
+  if(monsterNumber >= emptySpaces){endGame = true; return 2;}
+
   assignRoles();
+
   digitalWrite(readyRound, HIGH);
-  while(digitalRead(startButton) == HIGH){Serial.println("start HIGH");}
-  while(digitalRead(startButton) == LOW){Serial.println("start LOW");}
+  while(digitalRead(startButton) == HIGH){}
+  while(digitalRead(startButton) == LOW){}
   digitalWrite(readyRound, LOW);
   digitalWrite(roundFlag, HIGH);
   killPlayerDone = false;
   movePlayerDone = false;
   specialPlayerDone = false;
   firstMove = false;
+
+  addMonsters(monsterNumber);
+
+  
   startTime = millis();
   Serial.println("round Start");
-  while((millis() - startTime) < 5000){
+  while((millis() - startTime) < 10000){
     checkingValues();
     if(killPlayerDone && movePlayerDone && specialPlayerDone){
       endRound = true;
@@ -209,7 +209,7 @@ void assignRoles(){
   Serial.println(String(special));
   if(special == 2){
     digitalWrite(specialVal0, LOW);
-    digitalWrite(specialVal1, LOW);
+    digitalWrite(specialVal1, HIGH);
     Serial.println("special 2");
   }else if(special == 1){
     digitalWrite(specialVal0, HIGH);
@@ -217,7 +217,7 @@ void assignRoles(){
     Serial.println("special 1");
   }else{
     digitalWrite(specialVal0, LOW);
-    digitalWrite(specialVal1, HIGH);
+    digitalWrite(specialVal1, LOW);
     Serial.println("special 0");
   }
 
@@ -227,7 +227,7 @@ void assignRoles(){
     Serial.println("assign 1");
   }else{
     digitalWrite(assignBool, LOW);
-    Serial.println("assign 0");
+    Serial.println("assign 2");
   }
   
   return;
@@ -241,6 +241,7 @@ int playersFailed(){
     if(firstMove){
       lightStates[movedMonsterI][movedMonsterJ] = true;
       matrix.writePixel(movedMonsterJ, movedMonsterI, LED_ON);
+      matrix.writeDisplay();
     }
   }
   if(!specialPlayerDone){fails++;}
@@ -259,6 +260,7 @@ void readButtonBoard(){
         if(lightStates[i][j] == true){
           lightStates[i][j] = false;
           matrix.drawPixel(j, i, LED_OFF);
+          matrix.writeDisplay();
           emptySpaces++;
           score++;
           killPlayerDone = true;
@@ -280,11 +282,13 @@ void readButtonBoard(){
           movedMonsterJ = j;
           lightStates[i][j] = false;
           matrix.drawPixel(j, i, LED_OFF);
+          matrix.writeDisplay();
         }
         else if((lightStates[i][j] == false) && (firstMove == true) && ((movedMonsterI == i) && (movedMonsterJ == j))){
           movePlayerDone = true;
           lightStates[i][j] = true;
           matrix.drawPixel(j, i, LED_ON);
+          matrix.writeDisplay();
         }
       }
     }
