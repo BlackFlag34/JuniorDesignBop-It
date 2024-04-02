@@ -3,16 +3,20 @@
 #include <Adafruit_GFX.h>
 #include "Adafruit_LEDBackpack.h"
 #include <Adafruit_PCF8574.h>
+#include "SPI.h"
+#include <Adafruit_ILI9341.h>
 
-#define I2C_ADDR1 0x20  //keys1
-#define I2C_ADDR2 0x21  //keys2
+#define TFT_DC 8
+#define TFT_CS 1
+#define TFT_MOSI 3
+#define TFT_CLK 2
+#define TFT_RST 6
+#define TFT_MISO 0
 
-//int playerSwitch = 3; 
+Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);
+
 int players = LOW;
 int startButton = 7;
-int rowKill[5] = {28,26,21,19,17};
-int rowMove[5] = {27,22,20,18,16};
-int column[5] = {0,1,2,3,6};
 
 int specialVal0 = 13;
 int specialVal1 = 12;
@@ -21,11 +25,14 @@ int assignBool = 11;
 int roundFlag = 10; 
 int startGameFlag = 9;
 
-int readyRound = 8;
+int readyRound = 8; //to be changed
+
 
 int specialDone = 14;
 
-
+Adafruit_PCF8574 columns;
+Adafruit_PCF8574 killRows;
+Adafruit_PCF8574 moveRows;
 Adafruit_8x8matrix matrix = Adafruit_8x8matrix();
 
 //declare the start 
@@ -53,13 +60,18 @@ int movedMonsterJ;
 void setup() {
   Serial.begin(115200); 
   matrix.begin(0x70);
-  I2C_8Bit_begin();  //all
+  columns.begin(0x20, &Wire);
+  killRows.begin(0x22, &Wire);
+  moveRows.begin(0x21, &Wire);
+  tft.begin();
+  tft.setRotation(2);
+
   for(int i = 0; i < 5; i++){
-    pinMode(column[i], INPUT_PULLUP);
-    pinMode(rowKill[i], OUTPUT);
-    digitalWrite(rowKill[i], HIGH);
-    pinMode(rowMove[i], OUTPUT);
-    digitalWrite(rowMove[i], HIGH);
+    columns.pinMode(i, INPUT_PULLUP);
+    killRows.pinMode(i, OUTPUT);
+    killRows.digitalWrite(i, HIGH);
+    moveRows.pinMode(i, OUTPUT);
+    moveRows.digitalWrite(i, HIGH);
     for(int j = 0; j < 5; j++){
       lightStates[i][j] = false;
     }
@@ -81,27 +93,33 @@ void setup() {
   killPlayerDone = false;
   movePlayerDone = false;
   specialPlayerDone = false;
-  
+
+  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextColor(ILI9341_WHITE);  tft.setTextSize(3);
+  tft.println("Hello World!");
 }
 
 void loop() {
-  randomSeed(millis());
-  if(!gameStart){
-    while(digitalRead(startGameFlag) == LOW){}
-    gameInitialize();
-  }
-  while(!endGame && (score < 99)){
-    int failure = newRound();
-    if(failure == 0){
-      fails = 0;
-    }
-    fails += failure;
-    if(fails >= 2){
-      endGame = true;
-      Serial.println("Score is " + String(score));
-      gameStart = false;
-    }
-  }
+  readButtonBoard();
+
+  // randomSeed(millis());
+  // if(!gameStart){
+  //   while(digitalRead(startGameFlag) == LOW){}
+  //   gameInitialize();
+  // }
+  // while(!endGame && (score < 99)){
+  //   int failure = newRound();
+  //   if(failure == 0){
+  //     fails = 0;
+  //   }
+  //   fails += failure;
+  //   if(fails >= 2){
+  //     endGame = true;
+  //     Serial.println("Score is " + String(score));
+  //     gameStart = false;
+  //   }
+  // }
 }
 
 void gameInitialize(){
@@ -251,46 +269,47 @@ int playersFailed(){
 void readButtonBoard(){
   for (int i = 0; i < 5; i++) {
     // Activate current row
-    digitalWrite(rowKill[i], LOW); // Set current row LOW to activate
+    killRows.digitalWrite(i, LOW); // Set current row LOW to activate
     for (int j = 0; j < 5; j++) {
       // Read the state of the current column
-      if (digitalRead(column[j]) == LOW) { // If the column reads LOW, a button is pressed
+      if (columns.digitalRead(j) == LOW) { // If the column reads LOW, a button is pressed
         // Add a small delay to debounce
         delay(50);
-        if(lightStates[i][j] == true){
-          lightStates[i][j] = false;
-          matrix.drawPixel(j, i, LED_OFF);
+        //if(lightStates[i][j] == true){
+          // lightStates[i][j] = false;
+          matrix.drawPixel(i, j, LED_ON);
           matrix.writeDisplay();
-          emptySpaces++;
-          score++;
-          killPlayerDone = true;
-        }
+          // emptySpaces++;
+          // score++;
+          // killPlayerDone = true;
+       // }
       }
     }
 
     // Deactivate current row before moving to the next
-    digitalWrite(rowKill[i], HIGH);
+    killRows.digitalWrite(i, HIGH);
   }
   for(int i = 0; i < 5; i++){
-    digitalWrite(rowMove[i], LOW);
+    moveRows.digitalWrite(i, LOW);
     for(int j = 0; j < 5; j++) {
-      if(digitalRead(column[j]) == LOW) {
+      if(columns.digitalRead(j) == LOW) {
         delay(50);
-        if((lightStates[i][j] == true) && (firstMove == false)){
-          firstMove = true;
-          movedMonsterI = i;
-          movedMonsterJ = j;
-          lightStates[i][j] = false;
-          matrix.drawPixel(j, i, LED_OFF);
+        // if((lightStates[i][j] == true) && (firstMove == false)){
+          // firstMove = true;
+          // movedMonsterI = i;
+          // movedMonsterJ = j;
+          // lightStates[i][j] = false;
+          matrix.drawPixel(i, j, LED_OFF);
           matrix.writeDisplay();
-        }
-        else if((lightStates[i][j] == false) && (firstMove == true) && ((movedMonsterI == i) && (movedMonsterJ == j))){
-          movePlayerDone = true;
-          lightStates[i][j] = true;
-          matrix.drawPixel(j, i, LED_ON);
-          matrix.writeDisplay();
-        }
+        // }
+        // else if((lightStates[i][j] == false) && (firstMove == true) && ((movedMonsterI == i) && (movedMonsterJ == j))){
+        //   movePlayerDone = true;
+        //   lightStates[i][j] = true;
+        //   matrix.drawPixel(j, i, LED_ON);
+        //   matrix.writeDisplay();
+        // }
       }
     }
+    moveRows.digitalWrite(i, HIGH);
   }
 }

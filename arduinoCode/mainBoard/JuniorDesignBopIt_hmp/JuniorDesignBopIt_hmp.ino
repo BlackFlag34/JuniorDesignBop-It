@@ -3,30 +3,35 @@
 #include <Adafruit_GFX.h>
 #include "Adafruit_LEDBackpack.h"
 #include <Adafruit_PCF8574.h>
+#include "SPI.h"
+#include <Adafruit_ILI9341.h>
 
+#define TFT_DC 8
+#define TFT_CS 1
+#define TFT_MOSI 3
+#define TFT_CLK 2
+#define TFT_RST 6
+#define TFT_MISO 0
 
-#define I2C_ADDR1 0x20  //keys1
-#define I2C_ADDR2 0x21  //keys2
+Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);
 
-//int playerSwitch = 3; 
 int players = LOW;
 int startButton = 7;
-int rowKill[5] = {28,26,21,19,17};
-int rowMove[5] = {27,22,20,18,16};
-int column[5] = {0,1,2,3,6};
 
-int specialVal0 = 13;
-int specialVal1 = 12;
-int assignBool = 11;
+int specialVal0 = 14;
+int specialVal1 = 13;
+int assignBool = 12;
 
-int roundFlag = 10; 
-int startGameFlag = 9;
+int roundFlag = 11; 
+int startGameFlag = 10;
 
-int readyRound = 8;
+int readyRound = 9;
 
-int specialDone = 14;
+int specialDone = 15;
 
-
+Adafruit_PCF8574 columns;
+Adafruit_PCF8574 killRows;
+Adafruit_PCF8574 moveRows;
 Adafruit_8x8matrix matrix = Adafruit_8x8matrix();
 
 //declare the start 
@@ -54,13 +59,18 @@ int movedMonsterJ;
 void setup() {
   Serial.begin(115200); 
   matrix.begin(0x70);
-  I2C_8Bit_begin();  //all
+  columns.begin(0x20, &Wire);
+  killRows.begin(0x22, &Wire);
+  moveRows.begin(0x21, &Wire);
+  tft.begin();
+  tft.setRotation(2);
+
   for(int i = 0; i < 5; i++){
-    pinMode(column[i], INPUT_PULLUP);
-    pinMode(rowKill[i], OUTPUT);
-    digitalWrite(rowKill[i], HIGH);
-    pinMode(rowMove[i], OUTPUT);
-    digitalWrite(rowMove[i], HIGH);
+    columns.pinMode(i, INPUT_PULLUP);
+    killRows.pinMode(i, OUTPUT);
+    killRows.digitalWrite(i, HIGH);
+    moveRows.pinMode(i, OUTPUT);
+    moveRows.digitalWrite(i, HIGH);
     for(int j = 0; j < 5; j++){
       lightStates[i][j] = false;
     }
@@ -84,6 +94,9 @@ void setup() {
   movePlayerDone = false;
   specialPlayerDone = false;
   
+  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextColor(ILI9341_WHITE);  tft.setTextSize(2);
 }
 
 void loop() {
@@ -95,15 +108,22 @@ void loop() {
     gameInitialize();
   }
   while(!endGame && (score < 99)){
-    Serial.println("Starting New Round...");
+    tft.println("getting New Round ready ...");
     int failure = newRound();
+    tft.fillScreen(ILI9341_BLACK);
+    tft.setCursor(0, 0);
+    tft.println("Round over!");
+    delay(1000);
     if(failure == 0){
       fails = 0;
     }
     fails += failure;
     if(fails >= 2){
       endGame = true;
-      Serial.println("Score is " + String(score));
+      tft.fillScreen(ILI9341_BLACK);
+      tft.setCursor(0, 0);
+      tft.println("Game Over");
+      tft.println("Score is " + String(score));
       gameStart = false;
     }
   }
@@ -180,6 +200,10 @@ uint8_t newRound(){
   if(monsterNumber >= emptySpaces){endGame = true; return 2;}
 
   assignRoles();
+  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0, 0);
+  tft.println("Round Ready");
+  delay(1000);
 
   digitalWrite(readyRound, HIGH);
   while(digitalRead(startButton) == HIGH){}
@@ -190,12 +214,19 @@ uint8_t newRound(){
   movePlayerDone = false;
   specialPlayerDone = false;
   firstMove = false;
-
+  tft.println("GO!");
+  delay(1000);
   addMonsters(monsterNumber);
 
   startTime = millis();
-  Serial.println("round Start");
+  int x = 10;   
+  tft.setCursor(0, 0);
+  tft.println("round Start");
   while((millis() - startTime) < 10000){
+    if((millis() - startTime) > ((10 - x) * 1000)){
+      tft.println(x);
+      --x;
+    }
     checkingValues();
     if(killPlayerDone && movePlayerDone && specialPlayerDone){
       endRound = true;
@@ -260,10 +291,10 @@ int playersFailed(){
 void readButtonBoard(){
   for (int i = 0; i < 5; i++) {
     // Activate current row
-    digitalWrite(rowKill[i], LOW); // Set current row LOW to activate
+     killRows.digitalWrite(i, LOW); // Set current row LOW to activate
     for (int j = 0; j < 5; j++) {
       // Read the state of the current column
-      if (digitalRead(column[j]) == LOW) { // If the column reads LOW, a button is pressed
+      if (columns.digitalRead(j) == LOW) { // If the column reads LOW, a button is pressed
         // Add a small delay to debounce
         delay(50);
         if(lightStates[i][j] == true){
@@ -278,12 +309,12 @@ void readButtonBoard(){
     }
 
     // Deactivate current row before moving to the next
-    digitalWrite(rowKill[i], HIGH);
+    killRows.digitalWrite(i, HIGH);
   }
   for(int i = 0; i < 5; i++){
-    digitalWrite(rowMove[i], LOW);
+    moveRows.digitalWrite(i, LOW);
     for(int j = 0; j < 5; j++) {
-      if(digitalRead(column[j]) == LOW) {
+      if(columns.digitalRead(j) == LOW) {
         delay(50);
         if(movePlayerDone == true){}
         else if((lightStates[i][j] == true) && (firstMove == false)){
@@ -304,6 +335,6 @@ void readButtonBoard(){
       }
     }
     // Deactivate current row before moving to the next
-    digitalWrite(rowMove[i], HIGH);
+    moveRows.digitalWrite(i, HIGH);
   }
 }
