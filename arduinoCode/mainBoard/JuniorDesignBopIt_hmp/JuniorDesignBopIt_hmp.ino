@@ -18,8 +18,8 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_R
 int players = LOW;
 int startButton = 7;
 
-int specialVal0 = 14;
-int specialVal1 = 13;
+int specialVal0 = 13;
+int specialVal1 = 14;
 int assignBool = 12;
 
 int roundFlag = 11; 
@@ -55,6 +55,8 @@ bool firstMove;
 
 int movedMonsterI;
 int movedMonsterJ;
+
+String oldPrint;
 
 void setup() {
   Serial.begin(115200); 
@@ -97,6 +99,7 @@ void setup() {
   tft.fillScreen(ILI9341_BLACK);
   tft.setCursor(0, 0);
   tft.setTextColor(ILI9341_WHITE);  tft.setTextSize(2);
+  oldPrint = "";
 }
 
 void loop() {
@@ -108,11 +111,16 @@ void loop() {
     gameInitialize();
   }
   while(!endGame && (score < 99)){
-    tft.println("getting New Round ready ...");
+    tft.println("New Round \ngetting ready ...");
+    oldPrint = "New Round \ngetting ready ...";
     int failure = newRound();
-    tft.fillScreen(ILI9341_BLACK);
     tft.setCursor(0, 0);
-    tft.println("Round over!");
+    tft.setTextColor(ILI9341_BLACK);
+    tft.println(oldPrint);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setCursor(0,0);
+    tft.println("Round Over!");
+    oldPrint = "Round Over!";
     delay(1000);
     if(failure == 0){
       fails = 0;
@@ -120,10 +128,14 @@ void loop() {
     fails += failure;
     if(fails >= 2){
       endGame = true;
-      tft.fillScreen(ILI9341_BLACK);
       tft.setCursor(0, 0);
+      tft.setTextColor(ILI9341_BLACK);
+      tft.println(oldPrint);
+      tft.setTextColor(ILI9341_WHITE);
+      tft.setCursor(0,0);
       tft.println("Game Over");
       tft.println("Score is " + String(score));
+      oldPrint = "Game Over \nScore is "+ String(score);
       gameStart = false;
     }
   }
@@ -200,7 +212,10 @@ uint8_t newRound(){
   if(monsterNumber >= emptySpaces){endGame = true; return 2;}
 
   assignRoles();
-  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0,0);
+  tft.setTextColor(ILI9341_BLACK);
+  tft.println(oldPrint);
+  tft.setTextColor(ILI9341_WHITE); 
   tft.setCursor(0, 0);
   tft.println("Round Ready");
   delay(1000);
@@ -221,9 +236,15 @@ uint8_t newRound(){
   startTime = millis();
   int x = 10;   
   tft.setCursor(0, 0);
+  tft.setTextColor(ILI9341_BLACK);
+  tft.println(oldPrint);
+  tft.setTextColor(ILI9341_WHITE);
+  tft.setCursor(0,0);
   tft.println("round Start");
+  oldPrint = "round Start";
   while((millis() - startTime) < 10000){
     if((millis() - startTime) > ((10 - x) * 1000)){
+      oldPrint += (x + "\n");
       tft.println(x);
       --x;
     }
@@ -338,3 +359,8 @@ void readButtonBoard(){
     moveRows.digitalWrite(i, HIGH);
   }
 }
+
+void writeTFT(String new_message, String old_message){
+  
+}
+
