@@ -277,6 +277,8 @@ void readButtonBoard(){
         delay(50);
         //if(lightStates[i][j] == true){
           // lightStates[i][j] = false;
+          Serial.print("( "); Serial.print(i); Serial.print(", ");
+          Serial.print(j);  Serial.println(")");
           matrix.drawPixel(i, j, LED_ON);
           matrix.writeDisplay();
           // emptySpaces++;
@@ -294,6 +296,7 @@ void readButtonBoard(){
     for(int j = 0; j < 5; j++) {
       if(columns.digitalRead(j) == LOW) {
         delay(50);
+      
         // if((lightStates[i][j] == true) && (firstMove == false)){
           // firstMove = true;
           // movedMonsterI = i;

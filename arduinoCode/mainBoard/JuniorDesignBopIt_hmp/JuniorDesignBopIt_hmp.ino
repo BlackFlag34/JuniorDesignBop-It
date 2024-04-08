@@ -3,17 +3,24 @@
 #include <Adafruit_GFX.h>
 #include "Adafruit_LEDBackpack.h"
 #include <Adafruit_PCF8574.h>
-#include "SPI.h"
-#include <Adafruit_ILI9341.h>
+#include <TFT_eSPI.h> // Graphics and font library for ILI9341 driver chip
+#include <SPI.h>
 
-#define TFT_DC 8
-#define TFT_CS 1
-#define TFT_MOSI 3
-#define TFT_CLK 2
-#define TFT_RST 6
-#define TFT_MISO 0
+#define TFT_DC 8 //pin
+#define TFT_CS 1 //cs
+#define TFT_MOSI 3 //tx
+#define TFT_CLK 2 //sck
+#define TFT_RST 6 //pin
+#define TFT_MISO 0 //rx
 
-Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);
+//Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);
+
+// Pause in milliseconds between screens, change to 0 to time font rendering
+#define WAIT 3000
+#define FONT_SIZE 4
+
+TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h
+
 
 int players = LOW;
 int startButton = 7;
@@ -64,8 +71,12 @@ void setup() {
   columns.begin(0x20, &Wire);
   killRows.begin(0x22, &Wire);
   moveRows.begin(0x21, &Wire);
-  tft.begin();
+  tft.init();
   tft.setRotation(2);
+  tft.fillScreen(TFT_BLACK);
+   tft.setTextColor(TFT_WHITE, TFT_BLACK);
+    tft.setTextFont(4);
+    tft.setTextSize(1);
 
   for(int i = 0; i < 5; i++){
     columns.pinMode(i, INPUT_PULLUP);
@@ -95,49 +106,47 @@ void setup() {
   killPlayerDone = false;
   movePlayerDone = false;
   specialPlayerDone = false;
-  
-  tft.fillScreen(ILI9341_BLACK);
-  tft.setCursor(0, 0);
-  tft.setTextColor(ILI9341_WHITE);  tft.setTextSize(2);
-  oldPrint = "";
 }
 
+
+
+void clear(){
+  tft.fillScreen(TFT_BLACK);
+  tft.setCursor(0,0);
+}
 void loop() {
   randomSeed(millis());
   if(!gameStart){
-    Serial.println("Waiting for startGameFlag");
-    while(digitalRead(startGameFlag) == LOW){}
+    clear();
+    tft.println("Waiting to start");
+    while(digitalRead(startButton) == LOW){} //startGameFlag
     Serial.println("Game Initializing");
     gameInitialize();
   }
-  while(!endGame && (score < 99)){
-    tft.println("New Round \ngetting ready ...");
-    oldPrint = "New Round \ngetting ready ...";
-    int failure = newRound();
-    tft.setCursor(0, 0);
-    tft.setTextColor(ILI9341_BLACK);
-    tft.println(oldPrint);
-    tft.setTextColor(ILI9341_WHITE);
-    tft.setCursor(0,0);
-    tft.println("Round Over!");
-    oldPrint = "Round Over!";
-    delay(1000);
-    if(failure == 0){
-      fails = 0;
+  else{
+    while(!endGame && (score < 99)){
+      clear();
+      tft.println("New Round\ngetting ready ...");
+      int failure = newRound();
+      tft.println("Round Over!");
+      delay(WAIT);
+      if(failure == 0){
+        fails = 0;
+      }
+      fails += failure;
+      if(fails >= 2){
+        endGame = true;
+        clear();
+        tft.println("Game Over");
+        tft.println("Score is " + String(score));
+        gameStart = false;
+        while(digitalRead(startButton) == LOW){}
+        while(digitalRead(startButton) == HIGH){}
+      }
     }
-    fails += failure;
-    if(fails >= 2){
-      endGame = true;
-      tft.setCursor(0, 0);
-      tft.setTextColor(ILI9341_BLACK);
-      tft.println(oldPrint);
-      tft.setTextColor(ILI9341_WHITE);
-      tft.setCursor(0,0);
-      tft.println("Game Over");
-      tft.println("Score is " + String(score));
-      oldPrint = "Game Over \nScore is "+ String(score);
-      gameStart = false;
-    }
+    clear();
+        tft.println("Game Over");
+        tft.println("Score is " + String(score));
   }
 }
 
@@ -149,6 +158,13 @@ void gameInitialize(){
   endGame = false;
   endRound = true;
   emptySpaces = 25;
+  matrix.clear();
+  matrix.writeDisplay();
+  for(int i = 0; i < 5; i++){
+    for(int j = 0; j < 5; j++){
+      lightStates[i][j] = false;
+    }
+  }
 
   gameStart = true;
 
@@ -189,7 +205,7 @@ bool placeMonster(){
           x++;
           if(x == spaceToPlace){
             lightStates[i][j] = true;
-            matrix.drawPixel(j, i, LED_ON);
+            matrix.drawPixel(i, j, LED_ON);
             matrix.writeDisplay();
             emptySpaces--;
             return true;
@@ -207,18 +223,12 @@ uint8_t newRound(){
   endRound = false;
   randomSeed(millis());
   //add monsters
-  long monsterNumber = random(roundNum, 10);
+  long monsterNumber = random(roundNum % 7, 7);
   Serial.println("random number of monsters = " + String(monsterNumber));
   if(monsterNumber >= emptySpaces){endGame = true; return 2;}
 
   assignRoles();
-  tft.setCursor(0,0);
-  tft.setTextColor(ILI9341_BLACK);
-  tft.println(oldPrint);
-  tft.setTextColor(ILI9341_WHITE); 
-  tft.setCursor(0, 0);
   tft.println("Round Ready");
-  delay(1000);
 
   digitalWrite(readyRound, HIGH);
   while(digitalRead(startButton) == HIGH){}
@@ -229,22 +239,13 @@ uint8_t newRound(){
   movePlayerDone = false;
   specialPlayerDone = false;
   firstMove = false;
-  tft.println("GO!");
-  delay(1000);
   addMonsters(monsterNumber);
-
-  startTime = millis();
+  clear();
   int x = 10;   
-  tft.setCursor(0, 0);
-  tft.setTextColor(ILI9341_BLACK);
-  tft.println(oldPrint);
-  tft.setTextColor(ILI9341_WHITE);
-  tft.setCursor(0,0);
   tft.println("round Start");
-  oldPrint = "round Start";
+  startTime = millis();
   while((millis() - startTime) < 10000){
     if((millis() - startTime) > ((10 - x) * 1000)){
-      oldPrint += (x + "\n");
       tft.println(x);
       --x;
     }
@@ -301,7 +302,7 @@ int playersFailed(){
     fails++;
     if(firstMove){
       lightStates[movedMonsterI][movedMonsterJ] = true;
-      matrix.writePixel(movedMonsterJ, movedMonsterI, LED_ON);
+      matrix.writePixel(movedMonsterI, movedMonsterJ, LED_ON);
       matrix.writeDisplay();
     }
   }
@@ -320,7 +321,7 @@ void readButtonBoard(){
         delay(50);
         if(lightStates[i][j] == true){
           lightStates[i][j] = false;
-          matrix.drawPixel(j, i, LED_OFF);
+          matrix.drawPixel(i,j, LED_OFF);
           matrix.writeDisplay();
           emptySpaces++;
           score++;
@@ -343,14 +344,14 @@ void readButtonBoard(){
           movedMonsterI = i;
           movedMonsterJ = j;
           lightStates[i][j] = false;
-          matrix.drawPixel(j, i, LED_OFF);
+          matrix.drawPixel(i, j, LED_OFF);
           matrix.writeDisplay();
         }
         else if((lightStates[i][j] == false) && (firstMove == true) && ((movedMonsterI == i) && (movedMonsterJ == j))){}
         else if((lightStates[i][j] == false) && (firstMove == true)){
           movePlayerDone = true;
           lightStates[i][j] = true;
-          matrix.drawPixel(j, i, LED_ON);
+          matrix.drawPixel(i, j, LED_ON);
           matrix.writeDisplay();
         }
       }
@@ -360,7 +361,4 @@ void readButtonBoard(){
   }
 }
 
-void writeTFT(String new_message, String old_message){
-  
-}
 
