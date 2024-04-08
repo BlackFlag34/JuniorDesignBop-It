@@ -119,7 +119,7 @@ void loop() {
   if(!gameStart){
     clear();
     tft.println("Waiting to start");
-    while(digitalRead(startButton) == LOW){} //startGameFlag
+    while(digitalRead(startGameFlag) == LOW){} 
     Serial.println("Game Initializing");
     gameInitialize();
   }
@@ -223,7 +223,13 @@ uint8_t newRound(){
   endRound = false;
   randomSeed(millis());
   //add monsters
-  long monsterNumber = random(roundNum % 7, 7);
+  long monsterNumber;
+  if(roundNum < 7){
+    monsterNumber = random(roundNum, 7);
+  }
+  else{
+    monsterNumber = random(6, 8);
+  }
   Serial.println("random number of monsters = " + String(monsterNumber));
   if(monsterNumber >= emptySpaces){endGame = true; return 2;}
 
